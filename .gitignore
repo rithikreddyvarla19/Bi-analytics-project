@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Data and notebook noise
+.ipynb_checkpoints/
+*.tmp
+*.log
+
+# Build and tooling
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Output artifacts that can be regenerated
+outputs/*.png
+outputs/*.html
