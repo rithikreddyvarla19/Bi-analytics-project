@@ -1,0 +1,7 @@
+table_name,raw_rows,clean_rows,duplicate_rows_removed,raw_null_cells,clean_null_cells
+customers,5020,5000,20,75,0
+products,180,180,0,8,0
+orders,12025,12000,25,0,0
+order_items,30057,30057,0,0,0
+returns,2238,2238,0,0,0
+regions,6,7,0,0,0

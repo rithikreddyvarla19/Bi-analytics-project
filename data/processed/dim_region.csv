@@ -1,0 +1,8 @@
+region_key,region_code,region_name,country
+1,MW,Midwest,USA
+2,NE,Northeast,USA
+3,P,Pacific,USA
+4,SE,Southeast,USA
+5,SW,Southwest,USA
+6,UNK,Unknown,USA
+7,W,West,USA

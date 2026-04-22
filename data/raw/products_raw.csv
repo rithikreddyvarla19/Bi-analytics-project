@@ -1,0 +1,181 @@
+product_id,product_name,category,subcategory,brand,unit_cost,list_price
+1,ELE-MOB-0001,Electronics,Mobile,North Peak,150.39,247.48
+2,ELE-MOB-0002,Electronics,Mobile,North Peak,145.03,256.84
+3,ELE-MOB-0003,Electronics,Mobile,Nova,48.97,63.94
+4,ELE-AUD-0004,Electronics,Audio,Core,132.88,245.49
+5,ELE-MOB-0005,Electronics,Mobile,Wildly,166.75,221.77
+6,ELE-AUD-0006,Electronics,Audio,Nova,135.09,173.28
+7,ELE-AUD-0007,Electronics,Audio,North Peak,128.63,243.74
+8,ELE-AUD-0008,Electronics,Audio,,12.06,23.83
+9,ELE-ACC-0009,Electronics,Accessories,North Peak,50.35,99.69
+10,ELE-ACC-0010,Electronics,Accessories,Wildly,187.63,346.24
+11,ELE-ACC-0011,Electronics,Accessories,Wildly,60.49,88.4
+12,ELE-AUD-0012,Electronics,Audio,Core,172.82,257.09
+13,ELE-MOB-0013,Electronics,Mobile,Urban Fox,63.05,92.11
+14,ELE-MOB-0014,Electronics,Mobile,Core,7.05,10.92
+15,ELE-MOB-0015,Electronics,Mobile,Core,110.81,172.91
+16,ELE-MOB-0016,Electronics,Mobile,Urban Fox,19.41,26.78
+17,ELE-AUD-0017,Electronics,Audio,North Peak,29.71,39.53
+18,ELE-AUD-0018,Electronics,Audio,Urban Fox,7.15,14.01
+19,ELE-ACC-0019,Electronics,Accessories,North Peak,79.71,151.75
+20,ELE-ACC-0020,Electronics,Accessories,North Peak,99.3,186.27
+21,ELE-AUD-0021,Electronics,Audio,Nova,46.02,82.3
+22,ELE-MOB-0022,Electronics,Mobile,Wildly,75.63,93.55
+23,ELE-ACC-0023,Electronics,Accessories,North Peak,165.95,241.83
+24,ELE-ACC-0024,Electronics,Accessories,North Peak,106.12,205.51
+25,ELE-ACC-0025,Electronics,Accessories,North Peak,15.95,24.46
+26,ELE-ACC-0026,Electronics,Accessories,Wildly,97.84,187.66
+27,ELE-AUD-0027,Electronics,Audio,North Peak,71.33,105.64
+28,ELE-AUD-0028,Electronics,Audio,Urban Fox,100.1,183.43
+29,ELE-MOB-0029,Electronics,Mobile,Urban Fox,150.17,197.81
+30,ELE-AUD-0030,Electronics,Audio,Nova,78.14,127.48
+31,ELE-AUD-0031,Electronics,Audio,North Peak,190.93,367.53
+32,ELE-MOB-0032,Electronics,Mobile,Core,179.09,235.93
+33,ELE-MOB-0033,Electronics,Mobile,,66.99,127.95
+34,ELE-ACC-0034,Electronics,Accessories,North Peak,47.89,83.78
+35,ELE-MOB-0035,Electronics,Mobile,North Peak,147.81,209.08
+36,ELE-MOB-0036,Electronics,Mobile,Wildly,175.24,295.75
+37,HOM-FUR-0037,Home,Furniture,Urban Fox,14.59,18.03
+38,HOM-FUR-0038,Home,Furniture,North Peak,118.06,174.57
+39,HOM-DEC-0039,Home,Decor,Urban Fox,47.76,93.56
+40,HOM-FUR-0040,Home,Furniture,,64.44,101.63
+41,HOM-FUR-0041,Home,Furniture,North Peak,184.59,236.14
+42,HOM-DEC-0042,Home,Decor,Wildly,127.63,235.76
+43,HOM-FUR-0043,Home,Furniture,Wildly,155.03,238.28
+44,HOM-DEC-0044,Home,Decor,Nova,141.82,234.68
+45,HOM-KIT-0045,Home,Kitchen,Nova,45.08,63.41
+46,HOM-KIT-0046,Home,Kitchen,Urban Fox,6.81,10.45
+47,HOM-FUR-0047,Home,Furniture,North Peak,115.18,203.08
+48,HOM-KIT-0048,Home,Kitchen,Nova,140.24,168.29
+49,HOM-KIT-0049,Home,Kitchen,North Peak,141.2,260.14
+50,HOM-KIT-0050,Home,Kitchen,Wildly,134.29,237.14
+51,HOM-FUR-0051,Home,Furniture,Wildly,146.25,261.85
+52,HOM-DEC-0052,Home,Decor,North Peak,17.34,25.81
+53,HOM-DEC-0053,Home,Decor,Nova,153.71,225.61
+54,HOM-FUR-0054,Home,Furniture,,157.38,220.25
+55,HOM-DEC-0055,Home,Decor,Core,39.54,58.82
+56,HOM-FUR-0056,Home,Furniture,Nova,63.4,76.26
+57,HOM-KIT-0057,Home,Kitchen,Urban Fox,70.84,102.79
+58,HOM-DEC-0058,Home,Decor,Wildly,14.24,21.51
+59,HOM-FUR-0059,Home,Furniture,North Peak,186.48,341.66
+60,HOM-KIT-0060,Home,Kitchen,Core,182.48,265.08
+61,HOM-DEC-0061,Home,Decor,Wildly,64.78,123.76
+62,HOM-KIT-0062,Home,Kitchen,Nova,78.3,151.21
+63,HOM-DEC-0063,Home,Decor,Core,193.45,242.43
+64,HOM-KIT-0064,Home,Kitchen,Urban Fox,63.67,98.01
+65,HOM-KIT-0065,Home,Kitchen,Nova,61.84,113.31
+66,HOM-DEC-0066,Home,Decor,Urban Fox,140.82,264.94
+67,HOM-FUR-0067,Home,Furniture,,74.06,100.01
+68,HOM-KIT-0068,Home,Kitchen,North Peak,150.11,236.48
+69,HOM-DEC-0069,Home,Decor,North Peak,196.85,341.93
+70,HOM-KIT-0070,Home,Kitchen,Core,90.45,177.67
+71,HOM-DEC-0071,Home,Decor,North Peak,41.1,78.6
+72,HOM-KIT-0072,Home,Kitchen,Core,102.31,133.07
+73,FAS-APP-0073,Fashion,Apparel,Urban Fox,152.06,285.38
+74,FAS-BAG-0074,Fashion,Bags,Urban Fox,16.94,29.35
+75,FAS-SHO-0075,Fashion,Shoes,Wildly,87.68,146.12
+76,FAS-BAG-0076,Fashion,Bags,Core,52.77,87.52
+77,FAS-SHO-0077,Fashion,Shoes,Wildly,112.08,212.42
+78,FAS-SHO-0078,Fashion,Shoes,Wildly,104.04,135.08
+79,FAS-APP-0079,Fashion,Apparel,Wildly,30.76,37.57
+80,FAS-SHO-0080,Fashion,Shoes,Nova,116.63,233.17
+81,FAS-APP-0081,Fashion,Apparel,Wildly,170.48,251.81
+82,FAS-APP-0082,Fashion,Apparel,Nova,194.98,299.09
+83,FAS-BAG-0083,Fashion,Bags,Core,107.57,148.35
+84,FAS-BAG-0084,Fashion,Bags,Nova,47.52,57.14
+85,FAS-BAG-0085,Fashion,Bags,Urban Fox,42.66,63.86
+86,FAS-APP-0086,Fashion,Apparel,Core,80.63,151.28
+87,FAS-BAG-0087,Fashion,Bags,Nova,6.48,8.76
+88,FAS-SHO-0088,Fashion,Shoes,Core,122.81,238.71
+89,FAS-APP-0089,Fashion,Apparel,,144.73,263.06
+90,FAS-SHO-0090,Fashion,Shoes,Core,8.54,16.76
+91,FAS-APP-0091,Fashion,Apparel,Urban Fox,168.41,275.48
+92,FAS-APP-0092,Fashion,Apparel,Nova,75.08,139.85
+93,FAS-SHO-0093,Fashion,Shoes,Urban Fox,100.99,166.44
+94,FAS-BAG-0094,Fashion,Bags,Wildly,96.97,169.14
+95,FAS-BAG-0095,Fashion,Bags,Nova,133.57,232.32
+96,FAS-BAG-0096,Fashion,Bags,Wildly,165.54,270.26
+97,FAS-BAG-0097,Fashion,Bags,North Peak,137.53,173.52
+98,FAS-BAG-0098,Fashion,Bags,Urban Fox,159.47,246.87
+99,FAS-APP-0099,Fashion,Apparel,Nova,197.54,274.22
+100,FAS-BAG-0100,Fashion,Bags,North Peak,26.72,37.29
+101,FAS-APP-0101,Fashion,Apparel,Wildly,156.29,258.24
+102,FAS-SHO-0102,Fashion,Shoes,,106.74,129.36
+103,FAS-SHO-0103,Fashion,Shoes,Wildly,124.79,151.92
+104,FAS-BAG-0104,Fashion,Bags,Core,153.87,222.58
+105,FAS-APP-0105,Fashion,Apparel,Wildly,122.29,160.76
+106,FAS-BAG-0106,Fashion,Bags,North Peak,138.23,269.1
+107,FAS-SHO-0107,Fashion,Shoes,Nova,115.72,198.74
+108,FAS-SHO-0108,Fashion,Shoes,Nova,15.56,23.61
+109,BEA-HAI-0109,Beauty,Haircare,Core,161.96,314.53
+110,BEA-MAK-0110,Beauty,Makeup,North Peak,103.66,172.89
+111,BEA-SKI-0111,Beauty,Skincare,Urban Fox,44.19,80.67
+112,BEA-HAI-0112,Beauty,Haircare,Wildly,131.2,185.47
+113,BEA-MAK-0113,Beauty,Makeup,Nova,9.5,12.39
+114,BEA-MAK-0114,Beauty,Makeup,Nova,65.39,128.98
+115,BEA-MAK-0115,Beauty,Makeup,Nova,21.3,25.86
+116,BEA-HAI-0116,Beauty,Haircare,Wildly,38.44,51.91
+117,BEA-SKI-0117,Beauty,Skincare,Nova,56.49,95.66
+118,BEA-HAI-0118,Beauty,Haircare,Nova,26.73,48.86
+119,BEA-HAI-0119,Beauty,Haircare,Nova,124.11,149.33
+120,BEA-MAK-0120,Beauty,Makeup,Wildly,60.16,95.98
+121,BEA-MAK-0121,Beauty,Makeup,Urban Fox,199.27,275.93
+122,BEA-SKI-0122,Beauty,Skincare,,184.0,282.78
+123,BEA-SKI-0123,Beauty,Skincare,Urban Fox,79.3,157.93
+124,BEA-SKI-0124,Beauty,Skincare,Wildly,111.23,136.67
+125,BEA-MAK-0125,Beauty,Makeup,Core,21.34,26.41
+126,BEA-MAK-0126,Beauty,Makeup,Urban Fox,97.78,187.37
+127,BEA-SKI-0127,Beauty,Skincare,Wildly,43.54,65.21
+128,BEA-HAI-0128,Beauty,Haircare,Wildly,107.78,144.39
+129,BEA-MAK-0129,Beauty,Makeup,Urban Fox,127.06,251.39
+130,BEA-MAK-0130,Beauty,Makeup,Wildly,8.16,14.39
+131,BEA-MAK-0131,Beauty,Makeup,Urban Fox,173.12,260.91
+132,BEA-MAK-0132,Beauty,Makeup,North Peak,96.25,135.15
+133,BEA-MAK-0133,Beauty,Makeup,Urban Fox,116.79,211.84
+134,BEA-MAK-0134,Beauty,Makeup,Core,82.55,103.47
+135,BEA-HAI-0135,Beauty,Haircare,Nova,89.59,121.62
+136,BEA-MAK-0136,Beauty,Makeup,Core,194.96,242.02
+137,BEA-HAI-0137,Beauty,Haircare,Wildly,130.91,184.48
+138,BEA-MAK-0138,Beauty,Makeup,Wildly,30.09,37.77
+139,BEA-SKI-0139,Beauty,Skincare,Core,129.09,181.06
+140,BEA-MAK-0140,Beauty,Makeup,Nova,190.27,295.1
+141,BEA-MAK-0141,Beauty,Makeup,Core,174.42,257.32
+142,BEA-SKI-0142,Beauty,Skincare,Wildly,133.8,243.11
+143,BEA-SKI-0143,Beauty,Skincare,Urban Fox,15.19,20.3
+144,BEA-MAK-0144,Beauty,Makeup,Wildly,156.14,281.82
+145,SPO-FIT-0145,Sports,Fitness,Nova,21.53,26.13
+146,SPO-FIT-0146,Sports,Fitness,Wildly,112.13,204.77
+147,SPO-OUT-0147,Sports,Outdoor,North Peak,84.45,163.43
+148,SPO-FIT-0148,Sports,Fitness,North Peak,17.0,29.28
+149,SPO-OUT-0149,Sports,Outdoor,Nova,190.65,367.03
+150,SPO-FIT-0150,Sports,Fitness,Wildly,8.74,13.84
+151,SPO-OUT-0151,Sports,Outdoor,Core,89.56,176.41
+152,SPO-ATH-0152,Sports,Athleisure,Wildly,26.34,42.35
+153,SPO-OUT-0153,Sports,Outdoor,Wildly,17.75,26.19
+154,SPO-FIT-0154,Sports,Fitness,Wildly,35.63,52.68
+155,SPO-OUT-0155,Sports,Outdoor,Wildly,156.23,252.28
+156,SPO-FIT-0156,Sports,Fitness,Core,185.44,292.76
+157,SPO-ATH-0157,Sports,Athleisure,North Peak,155.72,217.16
+158,SPO-ATH-0158,Sports,Athleisure,Core,119.49,181.06
+159,SPO-OUT-0159,Sports,Outdoor,Nova,108.9,211.24
+160,SPO-OUT-0160,Sports,Outdoor,Urban Fox,185.99,227.85
+161,SPO-OUT-0161,Sports,Outdoor,Wildly,184.34,279.31
+162,SPO-FIT-0162,Sports,Fitness,North Peak,161.91,303.47
+163,SPO-FIT-0163,Sports,Fitness,Urban Fox,106.13,196.08
+164,SPO-ATH-0164,Sports,Athleisure,North Peak,127.65,197.16
+165,SPO-ATH-0165,Sports,Athleisure,North Peak,167.13,243.97
+166,SPO-OUT-0166,Sports,Outdoor,Core,115.94,186.85
+167,SPO-FIT-0167,Sports,Fitness,Nova,83.13,154.16
+168,SPO-FIT-0168,Sports,Fitness,Wildly,155.87,239.55
+169,SPO-OUT-0169,Sports,Outdoor,Urban Fox,21.94,39.96
+170,SPO-ATH-0170,Sports,Athleisure,Nova,104.3,164.32
+171,SPO-OUT-0171,Sports,Outdoor,Nova,138.36,233.41
+172,SPO-OUT-0172,Sports,Outdoor,Core,32.09,53.23
+173,SPO-FIT-0173,Sports,Fitness,North Peak,162.54,275.2
+174,SPO-ATH-0174,Sports,Athleisure,Nova,161.44,252.49
+175,SPO-ATH-0175,Sports,Athleisure,Urban Fox,97.14,122.07
+176,SPO-OUT-0176,Sports,Outdoor,Core,147.54,266.78
+177,SPO-OUT-0177,Sports,Outdoor,Core,159.36,246.28
+178,SPO-ATH-0178,Sports,Athleisure,North Peak,77.81,151.51
+179,SPO-ATH-0179,Sports,Athleisure,Core,154.73,210.99
+180,SPO-ATH-0180,Sports,Athleisure,North Peak,176.56,231.91
