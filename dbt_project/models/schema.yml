@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: mart_daily_sales
+    columns:
+      - name: sales_date
+        tests: [not_null]
+  - name: mart_customer_ltv_proxy
+    columns:
+      - name: customer_id
+        tests: [not_null]
+  - name: mart_top_products_categories
+    columns:
+      - name: product_id
+        tests: [not_null]
+  - name: stg_fact_orders
+    columns:
+      - name: order_line_id
+        tests: [not_null, unique]
+      - name: order_id
+        tests: [not_null]

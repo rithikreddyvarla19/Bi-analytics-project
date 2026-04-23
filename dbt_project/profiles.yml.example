@@ -1,0 +1,12 @@
+retail_lakehouse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: retail
+      password: retail
+      port: 5432
+      dbname: retail_warehouse
+      schema: analytics
+      threads: 4

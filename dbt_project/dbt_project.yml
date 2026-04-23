@@ -1,0 +1,19 @@
+name: retail_lakehouse_dbt
+version: 1.0.0
+config-version: 2
+
+profile: retail_lakehouse
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+target-path: target
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  retail_lakehouse_dbt:
+    marts:
+      +materialized: table
+    staging:
+      +materialized: view
