@@ -34,3 +34,11 @@ Thumbs.db
 # Output artifacts that can be regenerated
 outputs/*.png
 outputs/*.html
+airflow/logs/
+airflow/plugins/__pycache__/
+.env
+.DS_Store
+.ruff_cache/
+target/
+dbt_packages/
+logs/

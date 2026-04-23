@@ -1,4 +1,13 @@
-pandas==2.2.3
-numpy==2.2.6
-python-dateutil==2.9.0.post0
+faker==25.8.0
+pandas==2.2.2
+numpy==1.26.4
+pyarrow==16.1.0
+pyspark==3.5.1
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+dbt-postgres==1.8.1
+pandera==0.20.3
+python-dotenv==1.0.1
+pytest==8.2.1
+ruff==0.4.7
 openpyxl==3.1.5
