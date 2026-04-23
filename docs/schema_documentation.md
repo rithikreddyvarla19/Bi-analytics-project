@@ -1,58 +1,22 @@
-# Star Schema Documentation
+# Schema Documentation
 
-## Overview
+## Gold dimensions
+- `dim_customers(customer_id, first_name, last_name, email, region, channel_preference, created_at, is_active)`
+- `dim_products(product_id, sku, product_name, category, base_price, is_active)`
+- `dim_date(date_key, year, month, day, week_of_year)`
+- `dim_region(region_id, region_name)`
+- `dim_channel(channel_id, channel_name)`
 
-The analytics model is designed as a star schema with one transactional fact table (`fact_sales`) and four descriptive dimensions (`dim_customers`, `dim_products`, `dim_date`, `dim_region`).
+## Gold facts
+- `fact_orders(order_id, order_line_id, order_date, customer_id, product_id, region, channel, item_quantity, order_amount, order_status)`
+- `fact_payments(payment_id, order_id, payment_date, payment_method, payment_status, payment_amount)`
+- `fact_returns(return_id, order_id, return_date, return_reason, refund_amount)`
+- `fact_web_events(event_id, event_ts, event_date, session_id, customer_id, product_id, event_type, channel, region)`
+- `fact_inventory(snapshot_date, product_id, region, on_hand_qty, reorder_point)`
 
-Grain of `fact_sales`: one row per order line item (`order_item_id`) for non-cancelled orders.
-
-## Table Definitions
-
-### `fact_sales`
-- Primary key: `order_item_id`
-- Foreign keys:
-  - `date_key` -> `dim_date.date_key`
-  - `customer_key` -> `dim_customers.customer_key`
-  - `product_key` -> `dim_products.product_key`
-- Core measures:
-  - `gross_revenue`
-  - `discount_amount`
-  - `net_revenue`
-  - `refunded_amount`
-  - `recognized_revenue`
-  - `cogs_amount`
-  - `profit_amount`
-
-### `dim_customers`
-- Primary key: `customer_key`
-- Business key: `customer_id`
-- Attributes: name, email, signup date, loyalty tier, and regional assignment via `region_key`
-
-### `dim_products`
-- Primary key: `product_key`
-- Business key: `product_id`
-- Attributes: product name, category, subcategory, brand, cost, and list price
-
-### `dim_date`
-- Primary key: `date_key` (YYYYMMDD integer)
-- Attributes: date, year, quarter, month, month name, week of year, day, weekday
-
-### `dim_region`
-- Primary key: `region_key`
-- Business key: `region_code`
-- Attributes: region name and country
-
-## Relationship Diagram (Text)
-
-- `dim_region (1) -> (many) dim_customers`
-- `dim_customers (1) -> (many) fact_sales`
-- `dim_products (1) -> (many) fact_sales`
-- `dim_date (1) -> (many) fact_sales`
-
-## Modeling Notes
-
-- Returns are incorporated in `fact_sales` through `returned_qty` and `refunded_amount`.
-- Recognized revenue is net of discounts and refunds:
-  - `recognized_revenue = net_revenue - refunded_amount`
-- Profit is calculated as:
-  - `profit_amount = recognized_revenue - cogs_amount`
+## Aggregate gold marts
+- `daily_sales`
+- `conversion_funnel_proxy`
+- `inventory_stockout_trends`
+- `streaming_hourly_activity`
+- `streaming_product_activity`

@@ -1,113 +1,165 @@
-# E-commerce Revenue & Customer Intelligence Platform
+# Cloud-Native Retail Lakehouse: Batch + Streaming Data Platform on AWS
 
-End-to-end Business Intelligence Analyst portfolio project that demonstrates realistic BI workflow execution:
+Production-style Data Engineering portfolio project for a fictional ecommerce company. The platform ingests batch and streaming retail data, processes it through a medallion lakehouse (bronze/silver/gold), builds warehouse-ready marts, runs quality checks, and publishes BI-ready outputs.
 
-- synthetic e-commerce source data generation
-- Python + Pandas ETL and data quality handling
-- dimensional modeling into a star schema
-- SQL analytics for business questions
-- KPI layer and dashboard-ready data exports
-- stakeholder-facing insights and documentation
+## Business Problem
+Retail leadership needs a trusted analytics platform for revenue, customer behavior, returns, and inventory operations across channels and regions. Existing reporting is fragmented and not cloud-native.
 
-## Tech Stack
+## Solution Overview
+This project implements a cloud-native-ready pipeline with local execution and clear AWS deployment mapping.
 
-- Python
-- Pandas / NumPy
-- SQL (PostgreSQL-compatible scripts)
-- CSV + Excel outputs
-- Git / GitHub workflow
+### Architecture Flow
+Data Sources (batch files + clickstream/inventory stream)
+-> Ingestion
+-> Bronze (raw immutable)
+-> Silver (cleaned standardized)
+-> Gold (facts/dims + aggregates)
+-> Warehouse-serving layer (PostgreSQL local / Redshift in AWS)
+-> BI-ready KPI extracts
+-> Quality + observability + orchestration
+
+## Technology Stack
+- Python, SQL, PySpark
+- Parquet lakehouse storage
+- PostgreSQL warehouse simulation
+- dbt project (staging + marts)
+- Apache Airflow orchestration DAG
+- Pandera-style data quality checks (equivalent DQ framework)
+- Docker / docker-compose local stack
+- Terraform for AWS infrastructure
+- GitHub Actions CI pipeline
 
 ## Repository Structure
+- `data/raw` source datasets
+- `data/bronze` raw landed immutable parquet
+- `data/silver` cleansed conformed parquet
+- `data/gold` fact/dim and aggregate marts
+- `data/warehouse` warehouse-ready table exports
+- `scripts` ingestion, warehouse, quality, KPI, orchestration scripts
+- `spark_jobs` PySpark transformation jobs
+- `sql` warehouse DDL + analytics marts
+- `dbt_project` dbt models and tests
+- `airflow/dags` orchestration DAG
+- `infra/terraform` AWS IaC
+- `outputs` KPI, quality, and observability artifacts
+- `docs` architecture and operational documentation
+- `tests` unit and smoke validations
+- `.github/workflows` CI checks
 
-```text
-data/
-  raw/                 # Generated source-style data
-  processed/           # Cleaned and modeled star schema tables
-sql/                   # DDL + BI analysis SQL queries
-scripts/               # Data generation, ETL, KPI export pipeline
-docs/                  # Technical and stakeholder documentation
-outputs/               # KPI summaries and Excel reporting pack
-dashboard_spec/        # Dashboard design and ready-to-load datasets
+## Pipeline Stages
+1. Generate synthetic retail data (`customers`, `products`, `orders`, `payments`, `returns`, `inventory_snapshots`, `clickstream_events`).
+2. Ingest to bronze with ingestion metadata and partitioned paths.
+3. Simulate streaming micro-batches and aggregate streaming metrics.
+4. Transform bronze -> silver with schema standardization and deduplication.
+5. Transform silver -> gold conformed facts/dimensions + aggregate marts.
+6. Build warehouse tables and optionally load PostgreSQL.
+7. Execute dataframe-based quality checks.
+8. Export KPI outputs for BI tools.
+9. Publish run metadata and telemetry.
+
+## Local Run
+### 1) Environment setup
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+pip install -r requirements.txt
+# Optional local Airflow extras (Docker-first recommended)
+pip install -r requirements-airflow.txt
 ```
 
-## Architecture
-
-1. Generate raw entities (`customers`, `products`, `orders`, `order_items`, `returns`, `regions`)
-2. Clean and validate raw data
-3. Build star schema tables:
-   - `fact_sales`
-   - `dim_customers`
-   - `dim_products`
-   - `dim_date`
-   - `dim_region`
-4. Produce KPI outputs and dashboard extracts
-5. Analyze with SQL scripts that answer business questions
-
-See:
-- `docs/architecture.md`
-- `docs/schema_documentation.md`
-
-## How to Run
-
-```powershell
-python -m pip install -r requirements.txt
+### 2) Run full pipeline
+```bash
 python scripts/run_pipeline.py
 ```
 
-## Key Outputs
+### 3) Optional with Makefile
+```bash
+make setup
+make run-pipeline
+make test
+```
 
-### Processed Model Tables
+### 4) Optional Docker services
+```bash
+docker compose up -d postgres
+docker compose up airflow
+```
 
-- `data/processed/fact_sales.csv`
-- `data/processed/dim_customers.csv`
-- `data/processed/dim_products.csv`
-- `data/processed/dim_date.csv`
-- `data/processed/dim_region.csv`
+## Airflow Orchestration
+- DAG: `airflow/dags/retail_lakehouse_dag.py`
+- Orchestrates generation, ingestion, streaming, Spark transforms, quality, and KPI export.
+- Includes success/failure notification hook placeholders.
 
-### KPI Outputs
+## Warehouse & dbt
+- Warehouse DDL: `sql/warehouse/01_create_analytics_schema.sql`
+- KPI marts in `sql/marts`
+- dbt models in `dbt_project/models`
+- Compile check:
+```bash
+cp dbt_project/profiles.yml.example dbt_project/profiles.yml
+dbt parse --project-dir dbt_project --profiles-dir dbt_project
+```
 
-- `outputs/kpi_summary.csv`
-- `outputs/monthly_kpi_trend.csv`
-- `outputs/product_category_performance.csv`
-- `outputs/regional_performance.csv`
-- `outputs/customer_ltv_proxy.csv`
-- `outputs/bi_dashboard_pack.xlsx`
+## Data Quality
+Checks include:
+- non-null and uniqueness on business keys
+- positive revenue/quantity checks
+- non-negative inventory checks
+- refund-rate threshold
+- stage row count outputs
 
-### Dashboard-Ready Datasets
+Artifacts:
+- `outputs/quality/data_quality_report.csv`
+- `outputs/quality/quality_summary.json`
 
-- `dashboard_spec/datasets/executive_dashboard_dataset.csv`
-- `dashboard_spec/datasets/customer_insights_dataset.csv`
-- `dashboard_spec/datasets/product_performance_dataset.csv`
-- `dashboard_spec/datasets/regional_trends_dataset.csv`
+## Observability Outputs
+- `outputs/observability/pipeline_step_metrics.csv`
+- `outputs/observability/pipeline_run_metadata.json`
+- `outputs/observability/stage_row_counts.csv`
 
-## SQL Analytics Pack
+## BI-ready Outputs
+- `outputs/kpis/daily_sales.csv`
+- `outputs/kpis/customer_ltv_proxy.csv`
+- `outputs/kpis/repeat_purchase_metrics.csv`
+- `outputs/kpis/refund_return_rate.csv`
+- `outputs/kpis/conversion_funnel_proxy.csv`
+- `outputs/kpis/top_products.csv`
+- `outputs/kpis/regional_revenue_performance.csv`
 
-- `sql/01_create_star_schema.sql`
-- `sql/02_revenue_trends.sql`
-- `sql/03_top_customers_products.sql`
-- `sql/04_repeat_customer_rate.sql`
-- `sql/05_regional_performance.sql`
-- `sql/06_category_growth.sql`
-- `sql/07_cohort_retention.sql`
+## AWS Deployment Mapping
+Terraform scaffolds:
+- S3 buckets (bronze/silver/gold)
+- IAM roles and policies
+- Glue job placeholder
+- Lambda notification placeholder
+- Redshift Serverless namespace/workgroup
+- EventBridge schedule
+- SNS topic + subscription
+- CloudWatch log group
 
-These scripts include joins, aggregations, CTEs, ranking, and window functions for common BI analysis workflows.
+See:
+- `infra/terraform/README.md`
+- `docs/cloud_mapping.md`
 
-## KPI Coverage
+## Engineering Decisions
+- File-based streaming micro-batches for reproducible local simulation while mapping cleanly to Kinesis/Kafka.
+- Spark transforms separated by stage for maintainability and reruns.
+- Warehouse served as both CSV extracts and optional PostgreSQL loading.
+- Observability and quality artifacts persisted as first-class pipeline outputs.
 
-- Total revenue
-- Average order value
-- Monthly growth
-- Repeat purchase rate
-- Refund rate
-- Product / category performance
-- Regional performance
-- Customer LTV proxy
+## CI/CD
+GitHub Actions workflow runs:
+- lint (`ruff`)
+- tests (`pytest`)
+- pipeline smoke run
+- dbt parse validation
 
 ## Documentation Index
-
-- `docs/how_to_run.md`
+- `docs/architecture.md`
 - `docs/data_dictionary.md`
 - `docs/schema_documentation.md`
-- `docs/assumptions_limitations.md`
-- `docs/insights.md`
-- `dashboard_spec/dashboard_spec.md`
+- `docs/cloud_mapping.md`
+- `docs/quality_checks.md`
+- `docs/observability.md`
+- `docs/business_use_cases.md`

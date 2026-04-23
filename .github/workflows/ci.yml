@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Lint
+        run: ruff check scripts spark_jobs tests
+
+      - name: Unit tests
+        run: pytest -q
+
+      - name: Pipeline smoke test
+        run: python scripts/run_pipeline.py
+
+      - name: Validate dbt project compile
+        run: |
+          cp dbt_project/profiles.yml.example dbt_project/profiles.yml
+          python -m dbt.cli.main parse --project-dir dbt_project --profiles-dir dbt_project

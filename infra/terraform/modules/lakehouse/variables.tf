@@ -1,0 +1,9 @@
+variable "project_name" { type = string }
+variable "environment" { type = string }
+variable "aws_region" { type = string }
+variable "bronze_bucket_name" { type = string }
+variable "silver_bucket_name" { type = string }
+variable "gold_bucket_name" { type = string }
+variable "redshift_namespace" { type = string }
+variable "redshift_workgroup" { type = string }
+variable "alert_email" { type = string }
