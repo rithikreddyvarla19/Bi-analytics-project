@@ -1,0 +1,8 @@
+dataset,row_count,ingest_date
+customers,500,2026-04-23
+products,250,2026-04-23
+orders,10084,2026-04-23
+payments,4000,2026-04-23
+returns,346,2026-04-23
+inventory_snapshots,10800,2026-04-23
+clickstream_events,25000,2026-04-23

@@ -1,0 +1,10 @@
+step,duration_seconds,status
+generate_data,22.56,success
+ingest_to_bronze,0.78,success
+simulate_stream,0.83,success
+streaming_aggregations,1.82,success
+bronze_to_silver,1.52,success
+silver_to_gold,9.32,success
+build_warehouse,16.95,success
+run_quality_checks,0.88,success
+export_kpis,0.59,success

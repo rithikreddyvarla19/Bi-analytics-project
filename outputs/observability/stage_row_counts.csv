@@ -1,0 +1,11 @@
+dataset,row_count
+fact_orders,10084
+fact_payments,4000
+fact_returns,346
+fact_web_events,25000
+fact_inventory,10800
+dim_customers,500
+dim_products,250
+dim_date,90
+dim_region,4
+dim_channel,4

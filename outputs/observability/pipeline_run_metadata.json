@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-23T00:34:36.070427+00:00",
+  "pipeline": "cloud_native_retail_lakehouse",
+  "steps": [
+    {
+      "step": "generate_data",
+      "duration_seconds": 22.56,
+      "status": "success"
+    },
+    {
+      "step": "ingest_to_bronze",
+      "duration_seconds": 0.78,
+      "status": "success"
+    },
+    {
+      "step": "simulate_stream",
+      "duration_seconds": 0.83,
+      "status": "success"
+    },
+    {
+      "step": "streaming_aggregations",
+      "duration_seconds": 1.82,
+      "status": "success"
+    },
+    {
+      "step": "bronze_to_silver",
+      "duration_seconds": 1.52,
+      "status": "success"
+    },
+    {
+      "step": "silver_to_gold",
+      "duration_seconds": 9.32,
+      "status": "success"
+    },
+    {
+      "step": "build_warehouse",
+      "duration_seconds": 16.95,
+      "status": "success"
+    },
+    {
+      "step": "run_quality_checks",
+      "duration_seconds": 0.88,
+      "status": "success"
+    },
+    {
+      "step": "export_kpis",
+      "duration_seconds": 0.59,
+      "status": "success"
+    }
+  ],
+  "stage_file_counts": {
+    "raw": 13,
+    "bronze": 7,
+    "silver": 460,
+    "gold": 739,
+    "warehouse": 11
+  }
+}
