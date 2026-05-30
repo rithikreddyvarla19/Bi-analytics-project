@@ -1,0 +1,775 @@
+family_id,site_state,referral_date,referral_source,outreach_attempts,engagement_status,service_type,flexible_funds_amount,case_review_flag,follow_up_completed,outcome_status
+FAM-100356,illinois,2025-02-25,School,2,Engaged,Child care support,293.73,False,True,Needs met
+FAM-100507,washington,2025-04-01,Health provider,3,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100579,Washington,2025-02-07,Self-referral,2,Engaged,,65.51,False,True,Still active
+FAM-100250,new york,2025-03-07,Family resource center,2,Engaged,Housing navigation,,False,True,Connected to ongoing service
+FAM-100344,WA,2025-11-27,School,3,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100727,texas,2025-02-02,Health provider,4,Unable to contact,Legal aid referral,32.9,True,False,No response after outreach
+FAM-100643,Ill.,2025-06-25,CPS hotline screened-out,2,Engaged,Parent coaching,40.58,False,True,Needs met
+FAM-100696,TX,2025-09-21,Family resource center,0,Pending outreach,Housing navigation,127.95,False,False,No response after outreach
+FAM-100120,Ohio,2025-06-10,School,2,Pending outreach,Mental health referral,297.85,False,False,Still active
+FAM-100517,N.Y.,2025-01-25,Community partner,0,Declined,,0.0,False,True,Family declined services
+FAM-100457,NY,2025-08-20,CPS hotline screened-out,5,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100077,Texas,2025-03-24,Family resource center,1,Engaged,Child care support,132.67,False,True,Needs met
+FAM-100199,Washington,2025-12-18,School,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100109,Illinois,2025-09-15,Family resource center,3,Engaged,Legal aid referral,74.75,False,True,Still active
+FAM-100506,texas,2025-07-13,Community partner,2,Engaged,Benefits enrollment,5000.0,True,True,Still active
+FAM-100342,illinois,2025-08-15,Self-referral,4,Engaged,Legal aid referral,72.71,False,True,Needs met
+FAM-100733,Wash.,2025-10-10,Health provider,3,Engaged,Concrete supports,215.38,False,True,Needs met
+FAM-100066,Illinois,2025-11-27,CPS hotline screened-out,2,Engaged,Benefits enrollment,14.26,False,False,Still active
+FAM-100360,texas,2025-11-05,School,4,Engaged,Mental health referral,13.68,True,True,Needs met
+FAM-100067,TX,2025-05-16,Health provider,1,Unable to contact,Parent coaching,58.52,False,False,No response after outreach
+FAM-100086,IL,2025-02-05,CPS hotline screened-out,2,Unable to contact,,0.0,True,True,No response after outreach
+FAM-100365,illinois,2025-07-09,Community partner,3,Engaged,Child care support,330.05,False,True,Needs met
+FAM-100118,New York,2025-03-31,School,2,Engaged,Legal aid referral,56.64,False,True,Connected to ongoing service
+FAM-100423,Texas,2025-08-01,Health provider,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100023,OH,2025-12-05,Health provider,3,Pending outreach,,0.0,False,True,No response after outreach
+FAM-100235,OH,2025-09-20,Health provider,2,Engaged,Mental health referral,228.67,False,True,Connected to ongoing service
+FAM-100078,Illinois,2025-07-26,Family resource center,1,Pending outreach,,0.0,False,False,Still active
+FAM-100599,NY,2025-02-30,Self-referral,0,Engaged,Benefits enrollment,58.38,False,True,Needs met
+FAM-100208,NY,2025-04-07,Health provider,2,Engaged,Housing navigation,190.04,False,False,Still active
+FAM-100220,N.Y.,2025-02-16,Community partner,3,Declined,Housing navigation,266.49,True,True,Family declined services
+FAM-100482,Wash.,2025-04-02,Family resource center,2,Engaged,Parent coaching,49.01,False,True,Still active
+FAM-100097,Ill.,2025-09-07,CPS hotline screened-out,1,Engaged,Mental health referral,160.28,False,True,Needs met
+FAM-100291,texas,2025-04-08,School,1,Engaged,Housing navigation,62.1,False,,Still active
+FAM-100433,ohio,2025-02-17,CPS hotline screened-out,1,Engaged,Child care support,243.74,False,False,Still active
+FAM-100327,IL,2025-01-14,CPS hotline screened-out,1,Engaged,Legal aid referral,54.72,False,True,Connected to ongoing service
+FAM-100417,N.Y.,2025-02-14,CPS hotline screened-out,1,Engaged,Legal aid referral,63.38,False,True,Connected to ongoing service
+FAM-100653,TX,2025-10-21,School,1,Engaged,Parent coaching,74.27,False,False,No response after outreach
+FAM-100605,Washington,2025-07-15,CPS hotline screened-out,3,Engaged,Parent coaching,40.57,False,True,Needs met
+FAM-100549,IL,2025-09-06,Family resource center,0,Engaged,Child care support,117.64,False,True,Needs met
+FAM-100412,New York,2025-04-12,Health provider,1,Engaged,Housing navigation,160.9,False,True,Needs met
+FAM-100672,Texas,2025-08-21,School,2,Unable to contact,Housing navigation,428.7,False,True,No response after outreach
+FAM-100538,Washington,2025-07-17,Community partner,6,Engaged,Mental health referral,65.04,True,False,Still active
+FAM-100645,washington,2025-04-30,Community partner,5,Declined,,0.0,True,True,Family declined services
+FAM-100465,IL,2025-12-19,CPS hotline screened-out,3,Engaged,Housing navigation,548.7,False,True,Connected to ongoing service
+FAM-100259,Illinois,2025-08-03,Community partner,0,Engaged,Legal aid referral,122.38,False,True,Needs met
+FAM-100383,illinois,2025-03-29,Self-referral,1,Engaged,Parent coaching,122.96,False,False,No response after outreach
+FAM-100097,Ill.,2025-09-07,Self-referral,1,Engaged,Mental health referral,160.28,False,True,Needs met
+FAM-100196,Wash.,2025-05-06,Health provider,4,Engaged,Housing navigation,280.25,True,True,Connected to ongoing service
+FAM-100368,illinois,2025-01-09,Family resource center,2,Engaged,Child care support,130.67,False,True,Still active
+FAM-100296,ohio,2025-11-07,CPS hotline screened-out,0,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100626,OH,2025-05-04,Health provider,3,Engaged,Benefits enrollment,101.02,False,True,Needs met
+FAM-100515,new york,2025-02-08,School,4,Engaged,Parent coaching,79.92,False,False,Still active
+FAM-100634,OH,2025-03-08,Health provider,3,Engaged,Child care support,412.16,False,True,Still active
+FAM-100450,Ill.,2025-12-17,School,4,Declined,Benefits enrollment,47.18,False,True,Family declined services
+FAM-100264,Washington,2025-12-28,Community partner,2,Engaged,Child care support,98.5,False,False,No response after outreach
+FAM-100613,new york,2025-05-21,Community partner,7,Engaged,Benefits enrollment,64.37,True,,Needs met
+FAM-100635,Texas,2025-09-08,School,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100679,new york,2025-12-08,CPS hotline screened-out,4,Engaged,Legal aid referral,218.88,False,True,Connected to ongoing service
+FAM-100030,Wash.,2025-06-14,CPS hotline screened-out,2,Engaged,Child care support,142.57,False,True,Still active
+FAM-100357,IL,2025-11-22,Self-referral,5,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100033,Ill.,2025-07-22,CPS hotline screened-out,3,Engaged,Mental health referral,102.21,True,False,Still active
+FAM-100031,NY,2025-03-24,Self-referral,2,Engaged,Parent coaching,117.54,False,True,Connected to ongoing service
+FAM-100039,IL,2025-08-19,Self-referral,3,Engaged,Child care support,429.06,False,False,No response after outreach
+FAM-100697,OH,2025-08-04,Family resource center,1,Engaged,Child care support,572.47,False,True,Connected to ongoing service
+FAM-100426,N.Y.,2025-11-12,Health provider,2,Declined,,3750.0,False,True,Family declined services
+FAM-100511,NY,2025-09-30,Health provider,1,Engaged,Mental health referral,128.29,False,True,Connected to ongoing service
+FAM-100306,Ill.,2025-04-21,School,1,Engaged,Benefits enrollment,86.18,False,False,No response after outreach
+FAM-100181,new york,2025-02-25,Health provider,1,Engaged,Benefits enrollment,50.02,False,True,Needs met
+FAM-100405,new york,2025-07-02,Health provider,3,Engaged,Mental health referral,68.53,False,True,Needs met
+FAM-100210,TX,2025-04-06,Self-referral,2,Engaged,Concrete supports,104.15,False,True,Connected to ongoing service
+FAM-100464,OH,2025-01-03,Community partner,1,Engaged,Concrete supports,210.39,True,True,Needs met
+FAM-100260,Illinois,2025-10-17,Community partner,3,Declined,Mental health referral,315.13,False,True,Family declined services
+FAM-100209,Washington,2025-10-12,Self-referral,2,Declined,,0.0,False,True,Family declined services
+FAM-100380,Ill.,2025-01-02,Self-referral,2,Pending outreach,,0.0,False,False,Still active
+FAM-100381,new york,2025-12-08,Self-referral,3,Declined,,0.0,False,True,Family declined services
+FAM-100137,Ill.,2025-01-12,School,4,Engaged,Housing navigation,331.02,False,False,Still active
+FAM-100722,washington,2025-11-05,Self-referral,1,Engaged,Mental health referral,5.81,False,True,Still active
+FAM-100580,Wash.,2025-02-04,Community partner,1,Engaged,Parent coaching,32.43,False,True,Needs met
+FAM-100741,illinois,2025-10-06,Self-referral,0,Engaged,,184.9,False,True,Needs met
+FAM-100054,texas,2025-07-01,Family resource center,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100726,NY,2025-09-21,Self-referral,1,Engaged,,365.93,False,False,Still active
+FAM-100213,illinois,2025-06-14,Self-referral,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100265,texas,2025-08-01,Community partner,2,Pending outreach,,0.0,True,False,Still active
+FAM-100254,Texas,2025-08-30,School,1,Unable to contact,Housing navigation,652.36,False,,No response after outreach
+FAM-100609,IL,2025-11-10,Self-referral,2,Declined,,0.0,False,True,Family declined services
+FAM-100674,NY,2025-08-15,Self-referral,1,Engaged,Mental health referral,74.63,False,False,No response after outreach
+FAM-100740,IL,2025-10-26,CPS hotline screened-out,2,Engaged,Benefits enrollment,20.15,False,True,Connected to ongoing service
+FAM-100332,Texas,2025-04-24,Family resource center,4,Unable to contact,Mental health referral,155.43,False,False,No response after outreach
+FAM-100211,Illinois,2025-09-19,Health provider,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100429,IL,2025-09-19,Family resource center,3,Engaged,,63.77,True,True,Still active
+FAM-100084,TX,2025-08-18,Community partner,2,Unable to contact,Concrete supports,293.34,False,False,No response after outreach
+FAM-100010,Washington,2025-07-12,Family resource center,1,Engaged,Housing navigation,150.61,False,True,Needs met
+FAM-100319,Wash.,2025-10-08,Family resource center,4,Pending outreach,,0.0,True,False,No response after outreach
+FAM-100456,ohio,2025-02-24,Family resource center,0,Engaged,Child care support,,True,True,Still active
+FAM-100204,N.Y.,2025-06-16,CPS hotline screened-out,4,Engaged,Mental health referral,52.46,False,True,Connected to ongoing service
+FAM-100275,NY,2025-06-26,Health provider,3,Declined,Housing navigation,271.11,False,True,Family declined services
+FAM-100192,Illinois,2025-08-10,CPS hotline screened-out,5,Engaged,Legal aid referral,189.75,False,True,Still active
+FAM-100029,washington,2025-06-11,School,4,Engaged,Child care support,638.48,False,True,Needs met
+FAM-100683,OH,2025-12-16,CPS hotline screened-out,1,Engaged,Housing navigation,325.02,False,True,Needs met
+FAM-100490,Washington,2025-12-07,Health provider,2,Engaged,Mental health referral,57.98,False,True,Still active
+FAM-100065,Washington,2025-04-29,Self-referral,0,Engaged,Legal aid referral,124.27,False,True,Connected to ongoing service
+FAM-100227,Washington,2025-07-31,Family resource center,3,Engaged,Parent coaching,223.28,False,True,Needs met
+FAM-100578,illinois,2025-11-23,School,1,Engaged,Mental health referral,72.21,False,True,Connected to ongoing service
+FAM-100617,Texas,2025-04-08,Self-referral,1,Declined,,0.0,False,True,Family declined services
+FAM-100081,Wash.,2025-06-09,School,6,Engaged,Concrete supports,172.83,False,True,Connected to ongoing service
+FAM-100479,IL,2025-02-09,Self-referral,7,Engaged,Concrete supports,270.15,True,False,No response after outreach
+FAM-100398,Wash.,2025-04-13,Health provider,4,Pending outreach,,0.0,False,False,Still active
+FAM-100478,washington,2025-08-31,School,3,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100611,N.Y.,2025-06-18,Family resource center,1,Declined,Concrete supports,287.9,False,True,Family declined services
+FAM-100518,IL,2025-06-23,Self-referral,1,Engaged,Benefits enrollment,23.93,False,True,Needs met
+FAM-100499,texas,2025-06-05,Family resource center,1,Engaged,Housing navigation,609.57,False,True,Connected to ongoing service
+FAM-100076,WA,2025-05-01,Health provider,4,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100513,Illinois,2025-10-26,CPS hotline screened-out,3,Declined,,0.0,False,True,Family declined services
+FAM-100644,Ohio,2025-10-09,School,3,Pending outreach,,0.0,False,False,Still active
+FAM-100072,TX,2025-06-18,Community partner,0,Declined,,0.0,False,True,Family declined services
+FAM-100483,New York,2025-10-18,Self-referral,4,Engaged,Mental health referral,86.42,False,True,Needs met
+FAM-100717,New York,2025-06-29,Health provider,3,Declined,,0.0,False,True,Family declined services
+FAM-100673,washington,2025-02-04,CPS hotline screened-out,2,Engaged,Child care support,90.79,False,True,Needs met
+FAM-100063,Texas,2025-12-20,Self-referral,3,Engaged,Mental health referral,121.19,False,True,Connected to ongoing service
+FAM-100247,Wash.,2025-06-01,Self-referral,3,Engaged,Parent coaching,270.37,False,True,Needs met
+FAM-100665,IL,2025-09-11,Self-referral,0,Engaged,Housing navigation,183.43,False,True,Needs met
+FAM-100691,N.Y.,2025-10-18,Self-referral,0,Pending outreach,Child care support,247.87,False,False,No response after outreach
+FAM-100584,OH,2025-05-28,CPS hotline screened-out,1,Engaged,Benefits enrollment,90.29,False,True,Needs met
+FAM-100239,NY,2025-08-17,Family resource center,0,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100049,texas,2025-10-12,Health provider,2,Engaged,Parent coaching,50.91,False,True,Connected to ongoing service
+FAM-100594,IL,2025-04-28,School,0,Unable to contact,Housing navigation,,False,False,No response after outreach
+FAM-100335,washington,2025-10-23,Health provider,2,Engaged,Benefits enrollment,39.41,False,True,Connected to ongoing service
+FAM-100324,N.Y.,2025-12-22,CPS hotline screened-out,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100534,N.Y.,2025-07-30,Family resource center,0,Declined,Concrete supports,209.84,False,False,Family declined services
+FAM-100512,IL,2025-11-03,School,0,Engaged,Benefits enrollment,68.71,False,True,Connected to ongoing service
+FAM-100516,WA,2025-11-18,Health provider,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100007,TX,2025-09-12,Health provider,1,Engaged,Housing navigation,288.69,False,True,Needs met
+FAM-100168,WA,2025-05-03,Health provider,3,Engaged,Concrete supports,477.65,True,True,Needs met
+FAM-100101,ohio,2025-03-14,Family resource center,2,Engaged,Child care support,777.22,False,True,Needs met
+FAM-100712,texas,2025-09-23,Family resource center,3,Engaged,Parent coaching,199.63,False,False,No response after outreach
+FAM-100350,Ill.,2025-07-14,Health provider,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100409,Washington,2025-01-06,Health provider,1,Unable to contact,Child care support,390.83,False,False,No response after outreach
+FAM-100002,Ohio,2025-08-27,School,1,Engaged,Benefits enrollment,235.54,False,True,Connected to ongoing service
+FAM-100552,Wash.,2025-10-30,Community partner,4,Engaged,Parent coaching,94.04,False,False,Still active
+FAM-100422,,2026-99-01,Family resource center,2,Engaged,Benefits enrollment,31.8,False,True,Connected to ongoing service
+FAM-100155,texas,2025-08-30,CPS hotline screened-out,0,Pending outreach,Legal aid referral,94.58,False,False,Still active
+FAM-100698,washington,2025-01-19,Self-referral,4,Engaged,Mental health referral,219.05,False,True,Needs met
+FAM-100720,new york,2025-02-20,CPS hotline screened-out,2,Engaged,Benefits enrollment,34.43,False,True,Needs met
+FAM-100638,Washington,2025-10-17,School,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100326,NY,2025-03-28,Health provider,1,Engaged,Benefits enrollment,1.98,False,True,Needs met
+FAM-100670,NY,2025-12-14,CPS hotline screened-out,0,Engaged,Legal aid referral,12.11,False,False,No response after outreach
+FAM-100731,Illinois,2025-06-02,Self-referral,4,Engaged,Mental health referral,192.43,False,False,Still active
+FAM-100346,OH,2025-12-28,School,7,Declined,,0.0,True,True,Family declined services
+FAM-100079,Illinois,2025-09-02,Family resource center,1,Engaged,Housing navigation,76.25,False,True,Still active
+FAM-100148,Texas,2025-10-27,Family resource center,1,Engaged,Parent coaching,181.23,False,False,Still active
+FAM-100328,Wash.,2025-02-21,Community partner,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100732,N.Y.,2025-12-03,Family resource center,5,Engaged,Mental health referral,131.59,True,True,Still active
+FAM-100290,Texas,2025-10-22,School,5,Engaged,Housing navigation,157.0,False,True,Needs met
+FAM-100174,OH,2025-09-12,Health provider,3,Declined,Legal aid referral,281.04,False,False,Family declined services
+FAM-100133,OH,2025-07-24,Family resource center,2,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100231,Wash.,2025-11-09,Family resource center,5,Engaged,Benefits enrollment,15.09,True,True,Needs met
+FAM-100055,Washington,2025-01-16,Self-referral,6,Engaged,Mental health referral,68.2,False,True,Needs met
+FAM-100404,Wash.,2025-07-02,School,0,Engaged,Parent coaching,220.7,False,True,Needs met
+FAM-100591,washington,2025-11-26,Community partner,6,Declined,,,True,False,Family declined services
+FAM-100362,New York,2025-03-23,Family resource center,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100539,Wash.,2025-01-08,Community partner,2,Engaged,Housing navigation,297.36,True,True,Connected to ongoing service
+FAM-100351,New York,2025-01-17,Self-referral,3,Pending outreach,,0.0,False,False,Still active
+FAM-100338,Wash.,2025-03-15,Family resource center,7,Engaged,Concrete supports,248.13,False,True,Still active
+FAM-100355,N.Y.,2025-12-29,CPS hotline screened-out,2,Declined,Benefits enrollment,168.77,False,True,Family declined services
+FAM-100060,IL,2025-12-03,Family resource center,7,Pending outreach,,0.0,False,True,Still active
+FAM-100742,Texas,2025-08-20,Self-referral,1,Engaged,Child care support,290.48,False,True,Needs met
+FAM-100608,,2025-12-19,Health provider,2,Engaged,Benefits enrollment,33.48,False,True,Connected to ongoing service
+FAM-100641,TX,2025-12-01,CPS hotline screened-out,1,Declined,,0.0,False,True,Family declined services
+FAM-100570,new york,2025-12-13,School,3,Engaged,Child care support,528.63,False,True,Still active
+FAM-100624,NY,2025-08-09,Self-referral,2,Pending outreach,,0.0,False,,No response after outreach
+FAM-100621,texas,2025-06-24,CPS hotline screened-out,3,Engaged,Legal aid referral,38.6,False,True,Needs met
+FAM-100439,Ill.,2025-05-26,Health provider,0,Engaged,Mental health referral,177.57,False,True,Still active
+FAM-100395,New York,2025-11-16,Health provider,2,Engaged,Parent coaching,92.45,False,True,Needs met
+FAM-100090,TX,2025-06-08,Health provider,2,Declined,Concrete supports,673.51,False,True,Family declined services
+FAM-100495,TX,2025-05-31,CPS hotline screened-out,2,Engaged,Benefits enrollment,48.27,True,True,Connected to ongoing service
+FAM-100440,washington,2025-12-22,Health provider,4,Unable to contact,Housing navigation,-125.0,False,True,No response after outreach
+FAM-100375,new york,2025-02-04,School,3,Engaged,Concrete supports,162.98,False,True,Connected to ongoing service
+FAM-100158,TX,2025-07-04,Community partner,1,Engaged,Parent coaching,85.64,False,True,Connected to ongoing service
+FAM-100069,N.Y.,2025-06-21,Health provider,2,Engaged,Housing navigation,2500.0,False,False,No response after outreach
+FAM-100266,texas,2025-06-13,Community partner,1,Engaged,Housing navigation,96.03,False,True,Needs met
+FAM-100131,NY,2025-07-22,School,3,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100044,washington,2025-01-25,School,1,Unable to contact,Mental health referral,26.24,False,False,No response after outreach
+FAM-100070,Texas,2025-10-18,Health provider,5,Engaged,Benefits enrollment,59.71,False,False,No response after outreach
+FAM-100436,Illinois,2025-07-27,Family resource center,4,Unable to contact,,0.0,True,True,No response after outreach
+FAM-100286,WA,2025-02-28,Community partner,5,Engaged,Child care support,659.59,False,True,Connected to ongoing service
+FAM-100575,ohio,2025-05-17,Health provider,3,Engaged,Parent coaching,10.76,False,True,Needs met
+FAM-100218,Texas,2025-06-13,Self-referral,1,Engaged,Legal aid referral,24.2,False,True,Needs met
+FAM-100135,Ill.,2025-04-21,CPS hotline screened-out,4,Engaged,Housing navigation,,False,,Needs met
+FAM-100234,OH,2025-06-29,Health provider,1,Engaged,Parent coaching,84.24,True,True,Needs met
+FAM-100165,WA,2025-02-30,Family resource center,0,Unable to contact,Benefits enrollment,51.11,False,True,No response after outreach
+FAM-100164,WA,2025-06-02,CPS hotline screened-out,2,Pending outreach,Legal aid referral,4.47,False,False,Still active
+FAM-100028,IL,2025-07-19,School,0,Engaged,Legal aid referral,66.4,False,True,Needs met
+FAM-100586,ohio,2025-09-09,CPS hotline screened-out,1,Unable to contact,Benefits enrollment,198.37,False,False,No response after outreach
+FAM-100193,New York,2025-05-13,Community partner,1,Engaged,Legal aid referral,66.67,False,True,Connected to ongoing service
+FAM-100587,Ill.,2025-02-06,School,2,Engaged,Parent coaching,24.3,False,True,Needs met
+FAM-100500,Washington,2025-02-11,Community partner,0,Engaged,Concrete supports,105.27,False,,Needs met
+FAM-100299,Texas,2025-01-08,Self-referral,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100136,Wash.,2025-08-09,CPS hotline screened-out,2,Unable to contact,,0.0,True,False,No response after outreach
+FAM-100393,IL,2025-08-07,Family resource center,2,Engaged,Mental health referral,17.54,False,True,Needs met
+FAM-100292,Wash.,2025-12-15,School,3,Engaged,Legal aid referral,236.15,False,True,Still active
+FAM-100692,texas,2025-12-06,Self-referral,2,Engaged,Housing navigation,406.16,True,True,Needs met
+FAM-100449,Washington,2025-04-15,Community partner,1,Engaged,Parent coaching,45.8,False,True,Connected to ongoing service
+FAM-100006,Wash.,2025-02-01,CPS hotline screened-out,4,Engaged,Benefits enrollment,4.8,True,True,Connected to ongoing service
+FAM-100494,Illinois,2025-04-16,Self-referral,2,Declined,,0.0,False,True,Family declined services
+FAM-100215,Washington,2025-04-10,Family resource center,3,Unable to contact,Mental health referral,35.13,False,False,No response after outreach
+FAM-100073,illinois,2025-02-17,CPS hotline screened-out,5,Engaged,Housing navigation,171.65,False,True,Still active
+FAM-100497,Wash.,2025-05-17,Community partner,0,Engaged,Concrete supports,1100.16,False,False,Still active
+FAM-100630,New York,2025-09-26,Self-referral,2,Pending outreach,Legal aid referral,41.63,False,True,No response after outreach
+FAM-100145,washington,2025-11-08,Family resource center,6,Engaged,Legal aid referral,133.37,True,True,Needs met
+FAM-100363,new york,2025-11-23,Family resource center,2,Declined,,0.0,False,True,Family declined services
+FAM-100422,Ill.,2025-10-07,Family resource center,2,Engaged,Benefits enrollment,31.8,False,True,Connected to ongoing service
+FAM-100132,Wash.,2025-02-03,Family resource center,1,Unable to contact,Mental health referral,52.93,False,False,No response after outreach
+FAM-100352,Ill.,2025-04-20,Community partner,3,Declined,Housing navigation,328.54,False,True,Family declined services
+FAM-100554,Texas,2025-12-26,Community partner,1,Engaged,Concrete supports,76.55,False,True,Connected to ongoing service
+FAM-100725,IL,13/15/2025,CPS hotline screened-out,4,Engaged,Child care support,60.74,False,True,Connected to ongoing service
+FAM-100538,Washington,2025-07-17,CPS hotline screened-out,6,Engaged,Mental health referral,65.04,True,False,Still active
+FAM-100041,IL,2025-10-04,Family resource center,5,Engaged,Housing navigation,161.69,True,True,Needs met
+FAM-100468,new york,2025-03-08,Self-referral,3,Engaged,Parent coaching,48.56,False,True,Still active
+FAM-100108,new york,2025-06-22,School,5,Engaged,Parent coaching,56.26,False,True,Needs met
+FAM-100323,TX,2025-12-01,Community partner,5,Pending outreach,,0.0,False,,No response after outreach
+FAM-100056,Texas,2025-07-19,Community partner,3,Engaged,Benefits enrollment,64.38,False,True,Needs met
+FAM-100244,IL,2025-08-18,Family resource center,3,Engaged,Benefits enrollment,312.64,False,True,Still active
+FAM-100281,Wash.,2025-06-27,Health provider,1,Declined,,0.0,False,True,Family declined services
+FAM-100706,Washington,2025-01-03,CPS hotline screened-out,4,Engaged,Housing navigation,472.14,False,True,Needs met
+FAM-100212,NY,2025-10-15,School,3,Pending outreach,Child care support,,False,False,No response after outreach
+FAM-100628,Ill.,2025-07-04,Community partner,4,Engaged,Benefits enrollment,62.89,False,True,Connected to ongoing service
+FAM-100533,N.Y.,2025-04-14,Community partner,2,Declined,Benefits enrollment,5.71,False,True,Family declined services
+FAM-100024,Ohio,2025-10-13,CPS hotline screened-out,6,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100667,texas,2025-11-11,CPS hotline screened-out,0,Engaged,Benefits enrollment,22.39,False,False,No response after outreach
+FAM-100294,N.Y.,2025-07-18,CPS hotline screened-out,3,Engaged,Parent coaching,90.52,True,True,Connected to ongoing service
+FAM-100329,new york,2025-07-22,Community partner,4,Declined,,0.0,False,True,Family declined services
+FAM-100610,Washington,13/15/2025,Community partner,5,Engaged,Concrete supports,86.24,False,True,Needs met
+FAM-100334,OH,2025-06-17,Health provider,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100110,new york,2025-04-12,School,3,Engaged,Parent coaching,135.95,False,True,Connected to ongoing service
+FAM-100082,Ohio,2025-02-28,CPS hotline screened-out,2,Engaged,,147.16,False,True,Needs met
+FAM-100051,Illinois,2025-03-13,Family resource center,2,Engaged,,852.96,False,True,Still active
+FAM-100457,NY,2025-08-20,Community partner,5,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100311,OH,2025-09-03,Family resource center,7,Engaged,Legal aid referral,314.3,False,True,Needs met
+FAM-100709,WA,2025-06-20,School,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100625,illinois,2025-03-26,Health provider,2,Engaged,Legal aid referral,112.3,True,True,Needs met
+FAM-100198,texas,2025-05-04,School,2,Engaged,Housing navigation,214.21,False,False,No response after outreach
+FAM-100543,new york,2025-03-05,Health provider,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100336,TX,2025-12-18,Family resource center,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100309,TX,2025-02-09,Community partner,1,Engaged,Legal aid referral,169.62,False,True,Still active
+FAM-100473,IL,2025-06-20,CPS hotline screened-out,2,Engaged,Benefits enrollment,176.17,False,False,No response after outreach
+FAM-100396,OH,2025-01-17,Self-referral,3,Engaged,Mental health referral,102.1,True,True,Needs met
+FAM-100139,N.Y.,2025-06-09,Self-referral,2,Pending outreach,,194.7,False,True,Still active
+FAM-100314,OH,2025-03-31,Health provider,2,Unable to contact,Parent coaching,42.23,False,True,No response after outreach
+FAM-100477,Washington,2025-01-07,Health provider,1,Declined,Concrete supports,211.78,False,True,Family declined services
+FAM-100018,,2025-11-03,Community partner,2,Engaged,Housing navigation,421.45,False,True,Needs met
+FAM-100568,New York,2025-08-23,Family resource center,4,Engaged,Concrete supports,182.81,True,True,Connected to ongoing service
+FAM-100140,IL,2025-12-25,Community partner,3,Engaged,Concrete supports,57.4,False,False,No response after outreach
+FAM-100333,OH,2025-10-30,School,2,Engaged,Parent coaching,69.86,False,True,Connected to ongoing service
+FAM-100302,Ohio,2025-01-04,Self-referral,4,Declined,,0.0,False,True,Family declined services
+FAM-100529,Washington,2025-12-03,CPS hotline screened-out,1,Engaged,Parent coaching,131.02,False,True,Needs met
+FAM-100083,texas,2025-10-31,CPS hotline screened-out,2,Engaged,Child care support,560.94,False,False,No response after outreach
+FAM-100061,Illinois,2025-09-29,Family resource center,1,Unable to contact,Child care support,230.6,False,False,No response after outreach
+FAM-100724,Illinois,2025-10-14,School,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100424,texas,2025-06-02,CPS hotline screened-out,3,Unable to contact,Mental health referral,143.2,False,False,No response after outreach
+FAM-100182,Ohio,2025-07-01,Self-referral,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100527,Ill.,2025-02-22,Family resource center,2,Pending outreach,,0.0,False,False,Still active
+FAM-100223,Washington,2025-03-15,Self-referral,1,Engaged,Housing navigation,52.96,False,True,Needs met
+FAM-100362,New York,2025-03-23,Self-referral,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100443,TX,2025-06-28,School,2,Declined,,0.0,False,True,Family declined services
+FAM-100300,new york,2025-05-13,Family resource center,4,Engaged,Benefits enrollment,18.57,False,True,Still active
+FAM-100299,Texas,2025-01-08,Family resource center,1,Unable to contact,,,False,True,No response after outreach
+FAM-100420,N.Y.,2025-12-05,Health provider,2,Pending outreach,,0.0,True,False,No response after outreach
+FAM-100211,Illinois,2025-09-19,Family resource center,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100176,Illinois,2025-09-19,CPS hotline screened-out,1,Engaged,Mental health referral,55.07,False,True,Still active
+FAM-100530,Texas,2025-08-07,Community partner,5,Engaged,Parent coaching,126.85,False,True,Needs met
+FAM-100340,Illinois,2025-08-20,Family resource center,1,Engaged,Concrete supports,164.58,False,True,Still active
+FAM-100163,illinois,2025-05-29,Health provider,3,Declined,,0.0,True,True,Family declined services
+FAM-100248,Ohio,2025-10-15,Self-referral,0,Engaged,Parent coaching,164.13,False,True,Connected to ongoing service
+FAM-100688,texas,2025-06-12,Family resource center,1,Engaged,Mental health referral,56.48,False,True,Connected to ongoing service
+FAM-100074,texas,2025-09-08,Community partner,2,Declined,Concrete supports,204.35,True,True,Family declined services
+FAM-100493,Ill.,2025-08-09,School,3,Engaged,Child care support,627.5,False,True,Needs met
+FAM-100382,Wash.,2025-12-12,Community partner,1,Declined,,0.0,False,True,Family declined services
+FAM-100104,NY,2025-10-18,Community partner,4,Engaged,Mental health referral,14.62,False,True,Needs met
+FAM-100114,ohio,2025-07-04,Health provider,1,Engaged,Child care support,178.27,False,False,Still active
+FAM-100501,New York,2025-08-26,School,0,Engaged,Concrete supports,104.2,False,True,Needs met
+FAM-100092,washington,2025-11-04,CPS hotline screened-out,3,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100388,Illinois,2025-11-22,Family resource center,4,Engaged,Legal aid referral,85.69,True,True,Needs met
+FAM-100089,Ohio,2025-10-31,Health provider,3,Declined,,0.0,False,False,Family declined services
+FAM-100425,TX,2025-03-14,Health provider,3,Engaged,Child care support,263.92,False,True,Needs met
+FAM-100486,TX,2025-05-02,Community partner,4,Pending outreach,,0.0,False,True,No response after outreach
+FAM-100719,OH,2025-08-07,School,3,Pending outreach,,0.0,True,False,Still active
+FAM-100462,Wash.,2025-10-01,Family resource center,3,Engaged,Legal aid referral,112.95,False,True,Needs met
+FAM-100467,ohio,2025-08-06,Self-referral,6,Declined,,0.0,False,True,Family declined services
+FAM-100011,texas,2025-12-23,Community partner,1,Engaged,Legal aid referral,106.04,False,False,Still active
+FAM-100331,TX,2025-05-16,Family resource center,1,Engaged,Parent coaching,174.69,False,True,Connected to ongoing service
+FAM-100043,illinois,2025-05-10,Self-referral,2,Engaged,Benefits enrollment,32.94,False,True,Still active
+FAM-100042,Texas,2025-09-13,Family resource center,2,Engaged,Legal aid referral,41.35,False,False,Still active
+FAM-100167,WA,2025-03-02,Health provider,4,Engaged,Child care support,213.22,False,True,Connected to ongoing service
+FAM-100738,Wash.,2025-09-27,Self-referral,2,Engaged,Child care support,510.8,False,True,Needs met
+FAM-100597,IL,2025-10-12,Self-referral,3,Engaged,Benefits enrollment,15.49,False,True,Needs met
+FAM-100704,NY,2025-02-17,CPS hotline screened-out,1,Engaged,Legal aid referral,50.37,False,True,Still active
+FAM-100178,Wash.,2025-11-25,CPS hotline screened-out,2,Engaged,Mental health referral,199.15,False,True,Connected to ongoing service
+FAM-100514,Texas,2025-12-17,CPS hotline screened-out,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100523,illinois,2025-10-29,CPS hotline screened-out,3,Engaged,Concrete supports,,False,True,Needs met
+FAM-100177,IL,2025-02-28,School,1,Engaged,Housing navigation,202.73,False,True,Needs met
+FAM-100537,Washington,2025-02-12,Self-referral,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100544,Ohio,2025-10-31,Community partner,3,Engaged,Benefits enrollment,76.87,False,True,Connected to ongoing service
+FAM-100257,illinois,2025-02-07,Health provider,2,Engaged,Housing navigation,298.64,True,True,Needs met
+FAM-100632,new york,2025-06-08,CPS hotline screened-out,3,Engaged,Concrete supports,215.12,False,True,Connected to ongoing service
+FAM-100448,Texas,2025-07-10,Community partner,1,Engaged,Concrete supports,347.58,False,True,Still active
+FAM-100015,Texas,2025-10-14,School,1,Engaged,Housing navigation,106.87,True,True,Needs met
+FAM-100487,Texas,2025-07-13,Health provider,2,Unable to contact,Parent coaching,88.93,False,True,No response after outreach
+FAM-100256,WA,2025-09-05,Community partner,3,Engaged,Concrete supports,1051.67,True,True,Still active
+FAM-100470,washington,2025-09-27,Family resource center,1,Engaged,Parent coaching,120.8,False,False,Still active
+FAM-100367,Washington,2025-04-26,Community partner,2,Engaged,Mental health referral,118.17,False,True,Needs met
+FAM-100357,IL,2025-11-22,Self-referral,5,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100713,Ohio,2025-10-06,Self-referral,5,Engaged,Parent coaching,40.76,False,False,No response after outreach
+FAM-100394,TX,2025-09-20,Community partner,0,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100668,texas,2025-12-02,School,1,Engaged,Concrete supports,479.08,False,True,Connected to ongoing service
+FAM-100451,texas,2025-12-04,Family resource center,3,Engaged,Concrete supports,237.15,False,True,Connected to ongoing service
+FAM-100434,washington,2025-06-08,Community partner,3,Declined,Housing navigation,222.51,True,True,Family declined services
+FAM-100009,N.Y.,2025-02-04,CPS hotline screened-out,1,Engaged,Mental health referral,151.93,False,True,Connected to ongoing service
+FAM-100249,Wash.,2025-01-16,CPS hotline screened-out,1,Engaged,Legal aid referral,62.32,False,,Needs met
+FAM-100022,NY,2025-03-08,Health provider,2,Engaged,Mental health referral,266.11,False,True,Connected to ongoing service
+FAM-100221,Texas,2025-06-16,Self-referral,3,Engaged,Mental health referral,129.26,True,True,Connected to ongoing service
+FAM-100531,ohio,2025-03-02,Community partner,2,Engaged,Mental health referral,29.45,False,True,Needs met
+FAM-100669,IL,2025-02-18,Self-referral,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100528,OH,2025-12-01,School,4,Engaged,Child care support,356.13,False,True,Needs met
+FAM-100432,IL,2025-10-29,Community partner,0,Unable to contact,,0.0,False,,No response after outreach
+FAM-100650,new york,2025-06-28,Self-referral,2,Engaged,Child care support,400.71,False,False,No response after outreach
+FAM-100203,,2025-09-13,Self-referral,3,Engaged,Child care support,499.48,False,False,Still active
+FAM-100528,OH,2025-12-01,Community partner,4,Engaged,Child care support,356.13,False,True,Needs met
+FAM-100093,illinois,2025-05-22,School,5,Engaged,Concrete supports,355.4,False,True,Connected to ongoing service
+FAM-100377,New York,2025-09-30,Family resource center,1,Engaged,Mental health referral,151.72,False,True,Connected to ongoing service
+FAM-100622,Ill.,2025-03-02,CPS hotline screened-out,1,Pending outreach,Child care support,686.94,True,False,No response after outreach
+FAM-100481,TX,2025-10-30,Community partner,0,Engaged,Legal aid referral,67.81,True,True,Needs met
+FAM-100284,N.Y.,2025-06-11,School,2,Declined,Concrete supports,186.39,False,True,Family declined services
+FAM-100184,OH,2025-06-30,Community partner,1,Engaged,Legal aid referral,366.76,False,False,Still active
+FAM-100629,texas,2025-05-14,CPS hotline screened-out,5,Engaged,Mental health referral,51.3,False,True,Connected to ongoing service
+FAM-100604,,2025-10-29,Community partner,3,Engaged,Housing navigation,163.43,False,True,Connected to ongoing service
+FAM-100153,TX,2025-04-18,Community partner,2,Engaged,Benefits enrollment,103.12,False,True,Still active
+FAM-100075,Ill.,2025-06-23,Self-referral,4,Engaged,,198.47,False,True,Connected to ongoing service
+FAM-100445,IL,2025-08-30,Health provider,7,Engaged,Mental health referral,27.05,False,,No response after outreach
+FAM-100277,texas,2025-10-13,Family resource center,5,Engaged,Concrete supports,65.18,False,True,Connected to ongoing service
+FAM-100068,Ill.,2025-01-28,School,2,Engaged,Legal aid referral,149.13,False,True,Still active
+FAM-100485,Texas,2025-03-26,Family resource center,2,Declined,Benefits enrollment,257.36,False,True,Family declined services
+FAM-100188,texas,2025-03-29,Self-referral,1,Engaged,Mental health referral,41.7,False,False,No response after outreach
+FAM-100271,Illinois,2025-01-09,Family resource center,0,Engaged,Parent coaching,57.98,False,True,Still active
+FAM-100236,Texas,2025-08-31,CPS hotline screened-out,0,Declined,,0.0,False,True,Family declined services
+FAM-100088,New York,2025-10-08,Health provider,4,Engaged,Parent coaching,5.23,True,True,Connected to ongoing service
+FAM-100660,Texas,2025-03-06,Health provider,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100117,Texas,2025-02-21,School,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100125,texas,2025-07-26,Self-referral,0,Engaged,Benefits enrollment,19.84,False,False,No response after outreach
+FAM-100639,New York,2025-12-13,School,2,Unable to contact,Mental health referral,87.84,False,False,No response after outreach
+FAM-100289,NY,2025-06-22,Family resource center,3,Declined,,0.0,False,True,Family declined services
+FAM-100238,washington,2025-04-23,CPS hotline screened-out,4,Unable to contact,Benefits enrollment,63.1,False,False,No response after outreach
+FAM-100000,illinois,2025-02-02,School,4,Engaged,Parent coaching,52.63,False,True,Needs met
+FAM-100266,texas,2025-06-13,Health provider,1,Engaged,Housing navigation,96.03,False,True,Needs met
+FAM-100361,Ill.,2025-11-22,Community partner,3,Engaged,Parent coaching,88.09,False,True,Connected to ongoing service
+FAM-100678,Illinois,2025-07-10,Health provider,6,Engaged,Child care support,452.34,False,True,Needs met
+FAM-100442,ohio,2025-02-18,CPS hotline screened-out,1,Engaged,Concrete supports,264.22,False,True,Still active
+FAM-100278,Illinois,2025-01-24,Community partner,2,Engaged,Benefits enrollment,35.72,False,True,Connected to ongoing service
+FAM-100607,texas,2025-07-07,Health provider,4,Engaged,Legal aid referral,32.35,True,False,No response after outreach
+FAM-100116,TX,2025-01-14,Community partner,0,Engaged,Legal aid referral,156.34,False,True,Connected to ongoing service
+FAM-100228,Texas,2025-07-19,Family resource center,5,Declined,,0.0,False,False,Family declined services
+FAM-100558,texas,2025-10-17,Health provider,2,Declined,Benefits enrollment,90.79,False,False,Family declined services
+FAM-100521,New York,2025-02-23,Health provider,1,Declined,,0.0,True,True,Family declined services
+FAM-100411,Wash.,2025-03-25,CPS hotline screened-out,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100274,Illinois,2025-06-02,CPS hotline screened-out,3,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100318,NY,2025-12-09,Community partner,2,Engaged,Benefits enrollment,59.41,False,True,Needs met
+FAM-100535,Texas,2025-02-26,School,1,Engaged,Concrete supports,131.71,False,True,Connected to ongoing service
+FAM-100144,WA,2025-12-29,Family resource center,3,Engaged,Benefits enrollment,67.51,False,True,Connected to ongoing service
+FAM-100559,Texas,2025-11-07,School,2,Unable to contact,,12.87,False,False,No response after outreach
+FAM-100685,Washington,2025-10-20,Self-referral,1,Declined,,0.0,False,True,Family declined services
+FAM-100702,ohio,2025-03-03,Family resource center,2,Engaged,Legal aid referral,43.43,False,False,No response after outreach
+FAM-100569,ohio,2025-07-28,Family resource center,3,Engaged,Housing navigation,95.9,False,True,Needs met
+FAM-100369,ohio,2025-10-09,Family resource center,2,Declined,,0.0,False,False,Family declined services
+FAM-100268,Illinois,2025-08-12,Self-referral,1,Declined,,0.0,False,True,Family declined services
+FAM-100551,IL,2025-05-24,CPS hotline screened-out,1,Engaged,Legal aid referral,41.85,False,True,Still active
+FAM-100307,Ill.,2025-07-22,CPS hotline screened-out,2,Declined,Legal aid referral,139.09,False,False,Family declined services
+FAM-100310,new york,2025-09-01,Family resource center,3,Engaged,Concrete supports,767.47,True,True,Connected to ongoing service
+FAM-100428,TX,2025-01-10,School,2,Unable to contact,Mental health referral,50.24,False,False,No response after outreach
+FAM-100046,Illinois,2025-06-12,Health provider,4,Engaged,Concrete supports,126.34,False,True,Needs met
+FAM-100349,IL,2025-03-02,Self-referral,1,Engaged,Housing navigation,230.58,False,False,No response after outreach
+FAM-100371,NY,2025-08-30,Community partner,3,Engaged,Benefits enrollment,86.7,False,False,No response after outreach
+FAM-100620,Ohio,2025-06-08,CPS hotline screened-out,1,Declined,Concrete supports,,False,False,Family declined services
+FAM-100261,texas,2025-03-04,Family resource center,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100195,N.Y.,2025-02-01,Community partner,1,Engaged,Child care support,173.39,False,True,Needs met
+FAM-100319,Wash.,2025-10-08,School,4,Pending outreach,,0.0,True,False,No response after outreach
+FAM-100651,Wash.,2025-08-27,School,3,Engaged,Concrete supports,353.79,False,True,Still active
+FAM-100107,Ohio,2025-08-31,CPS hotline screened-out,3,Engaged,Housing navigation,371.27,False,True,Connected to ongoing service
+FAM-100059,illinois,2025-09-07,Self-referral,3,Declined,Housing navigation,864.13,False,True,Family declined services
+FAM-100583,OH,2025-01-19,Family resource center,1,Unable to contact,Benefits enrollment,86.78,False,False,No response after outreach
+FAM-100519,texas,2025-08-05,School,4,Declined,,0.0,False,True,Family declined services
+FAM-100100,new york,2025-10-31,Health provider,1,Declined,Benefits enrollment,125.82,False,True,Family declined services
+FAM-100453,Wash.,2025-01-10,Health provider,3,Engaged,Legal aid referral,35.71,False,True,Connected to ongoing service
+FAM-100695,Washington,2025-04-03,Family resource center,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100567,Ill.,2025-04-02,Community partner,2,Unable to contact,Concrete supports,555.44,False,False,No response after outreach
+FAM-100431,Texas,2025-09-27,School,4,Engaged,Benefits enrollment,84.91,True,False,No response after outreach
+FAM-100179,IL,2025-07-02,Health provider,6,Engaged,Housing navigation,202.25,False,,Needs met
+FAM-100304,N.Y.,2025-07-18,Health provider,4,Unable to contact,Concrete supports,547.94,False,False,No response after outreach
+FAM-100637,Ohio,2025-04-19,CPS hotline screened-out,5,Pending outreach,Child care support,408.26,False,False,No response after outreach
+FAM-100133,OH,2025-07-24,Community partner,2,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100745,TX,2025-05-13,Self-referral,4,Declined,,0.0,True,True,Family declined services
+FAM-100149,illinois,2025-01-22,CPS hotline screened-out,2,Declined,,0.0,False,True,Family declined services
+FAM-100124,ohio,2025-11-09,Self-referral,2,Engaged,Legal aid referral,77.94,False,True,Still active
+FAM-100616,Texas,2025-04-02,School,2,Declined,Child care support,359.17,True,True,Family declined services
+FAM-100675,Texas,2025-09-22,CPS hotline screened-out,7,Engaged,Mental health referral,50.8,True,True,Connected to ongoing service
+FAM-100185,illinois,2025-06-12,School,1,Engaged,Legal aid referral,75.07,False,True,Still active
+FAM-100525,Ohio,2025-04-24,Community partner,1,Engaged,Mental health referral,81.52,False,True,Needs met
+FAM-100730,texas,2025-09-24,Self-referral,1,Unable to contact,Mental health referral,163.87,False,False,No response after outreach
+FAM-100444,N.Y.,2025-07-05,Family resource center,1,Engaged,Parent coaching,57.26,False,True,Needs met
+FAM-100746,IL,2025-07-14,Community partner,1,Engaged,Parent coaching,22.34,False,True,Connected to ongoing service
+FAM-100446,Texas,2025-04-25,Self-referral,1,Engaged,Parent coaching,113.54,False,False,No response after outreach
+FAM-100321,texas,2025-02-09,CPS hotline screened-out,0,Pending outreach,Child care support,343.72,False,False,No response after outreach
+FAM-100353,OH,2025-06-08,Self-referral,3,Declined,,0.0,False,True,Family declined services
+FAM-100715,new york,2025-10-19,Community partner,2,Pending outreach,Child care support,79.96,True,False,Still active
+FAM-100142,TX,2025-04-11,Community partner,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100370,ohio,2025-05-03,Community partner,2,Engaged,Legal aid referral,43.98,False,True,Needs met
+FAM-100141,New York,2025-03-20,CPS hotline screened-out,4,Unable to contact,Mental health referral,47.02,True,False,No response after outreach
+FAM-100399,IL,2025-04-24,Community partner,3,Unable to contact,Concrete supports,289.75,False,True,No response after outreach
+FAM-100649,Texas,2025-11-06,Community partner,1,Engaged,Legal aid referral,121.8,False,False,No response after outreach
+FAM-100320,ohio,2025-04-28,Self-referral,1,Engaged,Mental health referral,110.99,False,True,Connected to ongoing service
+FAM-100019,,2025-06-14,Health provider,8,Engaged,Child care support,229.11,False,False,No response after outreach
+FAM-100172,Illinois,2025-10-09,Community partner,2,Declined,,0.0,False,True,Family declined services
+FAM-100633,Texas,2025-05-19,Self-referral,6,Engaged,Benefits enrollment,113.95,False,True,Needs met
+FAM-100312,washington,2025-02-13,CPS hotline screened-out,4,Declined,,0.0,False,True,Family declined services
+FAM-100390,Illinois,2025-09-30,Health provider,1,Unable to contact,Concrete supports,457.53,False,False,No response after outreach
+FAM-100721,Illinois,2025-12-06,Self-referral,2,Engaged,Child care support,373.04,False,False,Still active
+FAM-100012,Washington,2025-09-26,Health provider,5,Engaged,Parent coaching,145.52,False,True,Needs met
+FAM-100407,Ohio,2025-02-22,School,3,Engaged,Benefits enrollment,102.13,False,True,Connected to ongoing service
+FAM-100408,texas,2025-12-08,Community partner,1,Engaged,Benefits enrollment,94.96,False,True,Connected to ongoing service
+FAM-100305,Illinois,2025-02-21,Health provider,5,Pending outreach,Parent coaching,324.11,False,False,Still active
+FAM-100354,ohio,2025-12-20,Self-referral,3,Engaged,Mental health referral,122.46,False,True,Needs met
+FAM-100025,NY,2025-08-24,Self-referral,2,Pending outreach,,0.0,False,True,Still active
+FAM-100581,texas,2025-11-01,Health provider,1,Pending outreach,Benefits enrollment,9.95,False,False,No response after outreach
+FAM-100169,IL,2025-01-09,Health provider,4,Engaged,Legal aid referral,107.49,True,False,Still active
+FAM-100038,Wash.,2025-04-12,Self-referral,0,Engaged,Concrete supports,199.04,False,True,Connected to ongoing service
+FAM-100175,OH,2025-06-18,Health provider,3,Engaged,Parent coaching,140.85,False,True,Needs met
+FAM-100245,Texas,2025-01-31,CPS hotline screened-out,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100298,TX,2025-04-14,Community partner,3,Declined,Child care support,185.67,False,True,Family declined services
+FAM-100677,NY,2025-01-31,Community partner,5,Engaged,Legal aid referral,37.47,True,,No response after outreach
+FAM-100416,New York,2025-12-20,School,2,Engaged,Concrete supports,582.29,False,True,Connected to ongoing service
+FAM-100532,Ill.,2025-02-26,Community partner,1,Engaged,Housing navigation,140.19,False,True,Needs met
+FAM-100272,Ohio,2025-02-25,Health provider,2,Declined,Housing navigation,415.14,False,True,Family declined services
+FAM-100595,NY,2025-10-20,Self-referral,2,Pending outreach,,0.0,False,False,Still active
+FAM-100154,,2025-06-08,Health provider,3,Engaged,Legal aid referral,79.4,True,True,Needs met
+FAM-100126,Wash.,2025-01-29,Self-referral,2,Declined,Benefits enrollment,33.6,False,True,Family declined services
+FAM-100623,Washington,2025-06-02,Self-referral,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100341,OH,2025-04-17,Self-referral,0,Engaged,Parent coaching,200.42,False,True,Needs met
+FAM-100430,Illinois,2025-01-31,School,2,Engaged,Housing navigation,191.04,False,False,Still active
+FAM-100287,IL,2025-07-28,School,2,Engaged,Housing navigation,129.97,False,True,Connected to ongoing service
+FAM-100113,Ohio,2025-06-17,Self-referral,2,Engaged,Housing navigation,244.03,False,False,No response after outreach
+FAM-100603,Ohio,2025-02-19,Self-referral,4,Engaged,,482.25,False,True,Still active
+FAM-100173,texas,2025-09-21,Health provider,1,Unable to contact,,0.0,True,False,No response after outreach
+FAM-100359,Ill.,2025-10-01,Self-referral,4,Engaged,Child care support,92.83,False,False,Still active
+FAM-100306,Ill.,2025-04-21,School,1,Engaged,Benefits enrollment,86.18,False,False,No response after outreach
+FAM-100057,Texas,2025-02-26,Community partner,2,Engaged,Parent coaching,19.39,False,True,Connected to ongoing service
+FAM-100536,WA,2025-06-16,Health provider,2,Engaged,Legal aid referral,49.27,False,True,Still active
+FAM-100222,TX,2025-09-14,CPS hotline screened-out,2,Engaged,Mental health referral,134.81,False,True,Still active
+FAM-100280,N.Y.,2025-04-11,Family resource center,1,Engaged,Legal aid referral,9.75,True,True,Still active
+FAM-100017,ohio,2025-02-16,Family resource center,1,Unable to contact,Parent coaching,130.4,False,False,No response after outreach
+FAM-100127,Washington,2025-10-07,Community partner,5,Declined,,0.0,False,True,Family declined services
+FAM-100322,texas,2025-08-13,CPS hotline screened-out,2,Engaged,Legal aid referral,165.31,False,True,Needs met
+FAM-100255,Washington,2025-02-22,Community partner,1,Engaged,Mental health referral,229.15,False,True,Still active
+FAM-100522,Illinois,2025-03-12,Community partner,4,Engaged,Child care support,408.6,False,True,Still active
+FAM-100582,Ohio,2025-02-08,Community partner,6,Engaged,Child care support,186.51,True,True,Connected to ongoing service
+FAM-100743,N.Y.,2025-04-09,Health provider,2,Engaged,Housing navigation,711.76,True,True,Connected to ongoing service
+FAM-100190,TX,2025-09-07,Self-referral,4,Engaged,Housing navigation,527.99,True,True,Connected to ongoing service
+FAM-100115,Texas,2025-07-27,Self-referral,2,Engaged,Legal aid referral,274.52,False,True,Needs met
+FAM-100687,new york,2025-08-05,School,2,Engaged,Concrete supports,49.19,False,True,Needs met
+FAM-100737,texas,2025-05-02,Self-referral,3,Engaged,Parent coaching,28.39,False,True,Needs met
+FAM-100094,OH,2025-11-24,Community partner,3,Declined,Housing navigation,535.22,False,True,Family declined services
+FAM-100180,Illinois,2025-12-09,Self-referral,1,Engaged,Parent coaching,74.61,False,True,Still active
+FAM-100301,,2025-10-29,Self-referral,3,Engaged,Benefits enrollment,2500.0,False,True,Connected to ongoing service
+FAM-100588,Illinois,2025-11-02,Health provider,4,Unable to contact,,0.0,True,False,No response after outreach
+FAM-100652,N.Y.,2025-03-15,School,2,Engaged,Mental health referral,63.09,False,False,Still active
+FAM-100545,Ill.,2025-01-20,Community partner,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100542,illinois,2025-03-13,CPS hotline screened-out,2,Engaged,Child care support,337.06,False,True,Needs met
+FAM-100734,illinois,2025-02-30,Self-referral,3,Declined,Concrete supports,202.27,False,True,Family declined services
+FAM-100526,new york,2025-12-04,Health provider,1,Declined,,0.0,False,True,Family declined services
+FAM-100005,ohio,2025-11-10,School,2,Pending outreach,Housing navigation,54.78,False,False,No response after outreach
+FAM-100736,ohio,2025-09-24,CPS hotline screened-out,3,Engaged,Mental health referral,20.0,False,True,Connected to ongoing service
+FAM-100045,texas,2025-12-21,Health provider,1,Engaged,Mental health referral,149.14,False,True,Needs met
+FAM-100701,OH,2025-08-13,CPS hotline screened-out,1,Declined,Mental health referral,71.3,False,True,Family declined services
+FAM-100711,TX,2025-07-10,School,1,Engaged,Housing navigation,930.8,False,False,Still active
+FAM-100589,Wash.,2025-11-04,Family resource center,1,Engaged,Concrete supports,489.61,True,True,Needs met
+FAM-100171,N.Y.,2025-02-02,Family resource center,1,Engaged,Housing navigation,625.89,False,True,Needs met
+FAM-100016,illinois,2025-07-07,CPS hotline screened-out,2,Engaged,Housing navigation,466.91,True,False,Still active
+FAM-100048,Illinois,2025-09-05,Self-referral,2,Engaged,Concrete supports,346.65,False,True,Connected to ongoing service
+FAM-100749,OH,2025-02-27,Self-referral,2,Engaged,Child care support,111.02,False,True,Still active
+FAM-100710,texas,2025-09-05,Self-referral,2,Engaged,Housing navigation,144.27,False,True,Connected to ongoing service
+FAM-100003,new york,2025-06-10,School,2,Engaged,Housing navigation,177.61,False,True,Needs met
+FAM-100707,WA,2025-07-28,Health provider,1,Engaged,Parent coaching,29.69,False,False,No response after outreach
+FAM-100548,ohio,2025-07-08,Family resource center,2,Engaged,Legal aid referral,244.57,False,False,Still active
+FAM-100316,Wash.,2025-09-24,Self-referral,2,Engaged,Legal aid referral,37.04,False,False,Still active
+FAM-100655,ohio,2025-07-14,School,1,Engaged,Benefits enrollment,3750.0,True,,Needs met
+FAM-100480,ohio,2025-04-16,Family resource center,0,Engaged,Child care support,157.22,False,False,Still active
+FAM-100447,NY,2025-12-15,CPS hotline screened-out,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100714,ohio,2025-12-02,CPS hotline screened-out,1,Declined,,0.0,False,True,Family declined services
+FAM-100283,Texas,2025-06-29,CPS hotline screened-out,1,Engaged,Parent coaching,12.69,False,True,Needs met
+FAM-100096,Ohio,2025-03-29,Health provider,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100285,N.Y.,2025-12-09,Health provider,6,Engaged,Mental health referral,87.0,True,True,Connected to ongoing service
+FAM-100680,Texas,2025-09-22,CPS hotline screened-out,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100225,OH,2025-04-22,Community partner,1,Engaged,Benefits enrollment,54.79,False,False,No response after outreach
+FAM-100026,Washington,2025-05-27,CPS hotline screened-out,3,Engaged,Legal aid referral,81.7,False,True,Still active
+FAM-100654,new york,2025-07-21,CPS hotline screened-out,1,Engaged,Mental health referral,74.46,True,True,Needs met
+FAM-100263,texas,2025-12-04,Family resource center,4,Engaged,Concrete supports,179.31,False,False,Still active
+FAM-100437,washington,2025-12-05,Health provider,2,Engaged,Parent coaching,2500.0,False,True,Needs met
+FAM-100050,Texas,2025-10-05,Health provider,0,Engaged,Housing navigation,523.18,False,True,Needs met
+FAM-100364,New York,2025-02-12,Family resource center,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100229,Washington,2025-03-06,School,4,Engaged,Concrete supports,219.49,False,True,Needs met
+FAM-100037,Ill.,2025-10-30,Health provider,2,Declined,,0.0,False,True,Family declined services
+FAM-100157,new york,2025-07-23,Family resource center,1,Pending outreach,Parent coaching,43.88,False,False,Still active
+FAM-100237,Washington,2025-06-07,CPS hotline screened-out,3,Engaged,Mental health referral,35.44,True,True,Still active
+FAM-100744,Wash.,2025-10-18,Health provider,1,Engaged,Housing navigation,663.87,False,True,Connected to ongoing service
+FAM-100374,Wash.,2025-11-20,School,1,Declined,,0.0,False,True,Family declined services
+FAM-100469,Illinois,2025-12-07,Health provider,4,Engaged,Parent coaching,78.88,True,True,Needs met
+FAM-100746,IL,2025-07-14,School,1,Engaged,,22.34,False,True,Connected to ongoing service
+FAM-100680,Texas,2025-09-22,Community partner,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100576,NY,2025-12-04,School,3,Engaged,Legal aid referral,102.17,True,True,Needs met
+FAM-100194,OH,2025-12-17,School,2,Engaged,Mental health referral,142.66,False,True,Connected to ongoing service
+FAM-100155,texas,2025-08-30,Community partner,0,Pending outreach,Legal aid referral,94.58,False,False,Still active
+FAM-100671,Ill.,2025-08-13,Self-referral,0,Engaged,Concrete supports,254.8,False,True,Connected to ongoing service
+FAM-100503,TX,2025-11-13,Family resource center,3,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100748,IL,2025-04-25,Self-referral,2,Pending outreach,,0.0,False,False,Still active
+FAM-100648,ohio,2025-12-17,School,3,Engaged,Housing navigation,310.98,False,False,Still active
+FAM-100747,WA,2025-04-25,School,3,Unable to contact,Parent coaching,67.15,False,True,No response after outreach
+FAM-100162,Ill.,2025-05-30,Self-referral,2,Engaged,Child care support,312.49,False,True,Connected to ongoing service
+FAM-100557,NY,2025-11-16,Community partner,5,Declined,Parent coaching,65.83,True,False,Family declined services
+FAM-100152,washington,2025-12-01,Health provider,0,Declined,,0.0,False,True,Family declined services
+FAM-100541,Illinois,2025-01-21,School,1,Engaged,Parent coaching,68.49,False,True,Connected to ongoing service
+FAM-100627,Ill.,2025-05-15,Community partner,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100596,Ill.,2025-07-31,CPS hotline screened-out,0,Engaged,Benefits enrollment,62.01,False,True,Still active
+FAM-100111,ohio,2025-10-12,Health provider,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100226,TX,2025-10-23,Health provider,2,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100547,TX,2025-08-04,Family resource center,2,Declined,Child care support,259.6,True,True,Family declined services
+FAM-100103,TX,2025-01-03,Health provider,3,Pending outreach,,0.0,True,False,No response after outreach
+FAM-100421,Ill.,2025-09-11,School,3,Engaged,Legal aid referral,5000.0,False,True,Connected to ongoing service
+FAM-100419,Ill.,2025-07-04,School,2,Declined,Concrete supports,426.6,False,False,Family declined services
+FAM-100119,Texas,2025-02-11,Self-referral,2,Engaged,Legal aid referral,53.61,False,True,Connected to ongoing service
+FAM-100053,Ill.,2025-06-20,Family resource center,0,Engaged,Legal aid referral,50.09,False,True,Still active
+FAM-100151,washington,2025-04-13,Family resource center,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100403,TX,2025-12-21,CPS hotline screened-out,2,Engaged,Housing navigation,173.09,False,True,Still active
+FAM-100729,IL,2025-08-29,Community partner,1,Engaged,Mental health referral,140.76,True,False,Still active
+FAM-100207,Ill.,2025-12-20,Community partner,2,Pending outreach,Child care support,124.76,False,False,Still active
+FAM-100656,TX,2025-10-07,Health provider,1,Pending outreach,,0.0,False,,No response after outreach
+FAM-100602,New York,2025-09-27,Self-referral,3,Engaged,Parent coaching,45.19,False,False,No response after outreach
+FAM-100008,Ohio,2025-03-15,Community partner,1,Engaged,Housing navigation,229.81,False,True,Needs met
+FAM-100631,Washington,2025-04-30,CPS hotline screened-out,2,Engaged,Housing navigation,701.98,True,True,Connected to ongoing service
+FAM-100036,texas,2025-11-10,Health provider,2,Engaged,Concrete supports,271.42,False,True,Still active
+FAM-100452,Illinois,2026-99-01,School,1,Engaged,Mental health referral,56.31,False,True,Needs met
+FAM-100253,Ohio,2025-05-01,Self-referral,3,Pending outreach,,0.0,True,True,Still active
+FAM-100303,Illinois,2025-11-24,Community partner,2,Declined,Parent coaching,16.46,False,True,Family declined services
+FAM-100590,OH,2025-10-20,School,0,Unable to contact,Concrete supports,279.57,True,False,No response after outreach
+FAM-100598,,2025-08-18,Community partner,4,Declined,Parent coaching,22.31,False,True,Family declined services
+FAM-100571,texas,2025-06-01,Family resource center,2,Unable to contact,Benefits enrollment,201.45,False,False,No response after outreach
+FAM-100262,texas,2025-04-20,Health provider,1,Engaged,Mental health referral,254.27,False,True,Needs met
+FAM-100297,washington,2025-06-10,Self-referral,1,Engaged,Benefits enrollment,265.55,False,True,Needs met
+FAM-100414,Texas,2025-01-07,Health provider,2,Engaged,Legal aid referral,22.72,False,False,No response after outreach
+FAM-100150,New York,2025-11-09,Community partner,1,Engaged,Mental health referral,144.61,False,True,Needs met
+FAM-100618,Ill.,2025-01-23,Self-referral,2,Pending outreach,Parent coaching,235.88,True,True,No response after outreach
+FAM-100690,washington,2025-12-30,Community partner,7,Declined,Benefits enrollment,46.79,True,True,Family declined services
+FAM-100550,N.Y.,2025-10-21,School,0,Engaged,Parent coaching,58.23,True,True,Needs met
+FAM-100488,OH,2025-10-07,CPS hotline screened-out,1,Unable to contact,Mental health referral,74.73,True,False,No response after outreach
+FAM-100147,IL,2025-03-27,CPS hotline screened-out,2,Declined,,0.0,False,True,Family declined services
+FAM-100146,N.Y.,2025-01-13,Health provider,2,Declined,,0.0,False,False,Family declined services
+FAM-100572,Washington,2025-04-14,Family resource center,2,Declined,,0.0,False,True,Family declined services
+FAM-100718,new york,2025-03-28,Self-referral,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100585,OH,2025-12-04,CPS hotline screened-out,1,Engaged,Child care support,152.59,False,True,Connected to ongoing service
+FAM-100348,Wash.,2025-03-07,Community partner,2,Declined,,0.0,False,True,Family declined services
+FAM-100463,new york,2025-06-02,CPS hotline screened-out,1,Engaged,Benefits enrollment,41.5,False,True,Needs met
+FAM-100325,NY,2025-03-26,Community partner,0,Engaged,Child care support,265.68,False,True,Needs met
+FAM-100186,new york,2025-03-02,Community partner,1,Engaged,Concrete supports,684.74,False,True,Connected to ongoing service
+FAM-100123,NY,2025-06-21,Community partner,5,Engaged,Child care support,369.58,False,True,Connected to ongoing service
+FAM-100662,NY,2025-01-13,Community partner,2,Engaged,Benefits enrollment,26.0,True,True,Needs met
+FAM-100143,Illinois,2025-05-30,Self-referral,2,Pending outreach,,0.0,False,True,Still active
+FAM-100739,WA,2025-11-24,Family resource center,2,Engaged,Concrete supports,143.45,False,False,Still active
+FAM-100197,OH,2025-02-13,Self-referral,2,Declined,,0.0,False,True,Family declined services
+FAM-100279,washington,2025-01-31,CPS hotline screened-out,5,Unable to contact,Housing navigation,135.71,False,False,No response after outreach
+FAM-100293,NY,2025-05-02,CPS hotline screened-out,2,Pending outreach,,0.0,True,False,Still active
+FAM-100400,Wash.,2025-12-31,Community partner,5,Engaged,Child care support,779.48,False,False,No response after outreach
+FAM-100122,Texas,2025-08-27,Community partner,1,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100183,Ohio,2025-09-12,School,2,Engaged,Benefits enrollment,24.83,False,False,Still active
+FAM-100202,Ohio,2025-06-30,Self-referral,1,Engaged,Concrete supports,104.46,False,True,Still active
+FAM-100438,OH,2025-01-30,Self-referral,1,Engaged,Housing navigation,477.02,False,True,Connected to ongoing service
+FAM-100246,ohio,2025-10-04,Family resource center,2,Engaged,Benefits enrollment,220.2,False,True,Still active
+FAM-100415,illinois,2025-09-05,School,1,Engaged,Parent coaching,26.12,False,True,Connected to ongoing service
+FAM-100689,New York,2025-10-13,Self-referral,3,Engaged,Housing navigation,39.76,False,True,Connected to ongoing service
+FAM-100129,OH,2025-08-20,Community partner,2,Engaged,Parent coaching,189.25,False,True,Connected to ongoing service
+FAM-100402,Ill.,2025-04-27,CPS hotline screened-out,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100039,IL,2025-08-19,CPS hotline screened-out,3,Engaged,Child care support,429.06,False,False,No response after outreach
+FAM-100606,washington,2025-04-28,School,7,Declined,Mental health referral,35.41,True,True,Family declined services
+FAM-100703,,2025-03-04,School,3,Declined,,0.0,False,True,Family declined services
+FAM-100219,Illinois,2025-11-26,CPS hotline screened-out,0,Pending outreach,,0.0,False,False,Still active
+FAM-100705,N.Y.,2025-07-26,Community partner,2,Engaged,Housing navigation,303.27,False,True,Still active
+FAM-100593,OH,2025-12-24,CPS hotline screened-out,2,Engaged,Housing navigation,187.76,False,True,Needs met
+FAM-100708,washington,2025-06-23,Health provider,3,Engaged,Housing navigation,524.17,False,True,Connected to ongoing service
+FAM-100601,OH,2025-10-12,Self-referral,4,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100386,IL,2025-01-25,Self-referral,1,Engaged,Legal aid referral,127.36,False,True,Needs met
+FAM-100506,texas,2025-07-13,Community partner,2,Engaged,Benefits enrollment,79.57,True,True,Still active
+FAM-100509,IL,2025-03-28,CPS hotline screened-out,0,Engaged,Benefits enrollment,53.87,False,True,Still active
+FAM-100267,illinois,2025-05-07,Health provider,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100640,Illinois,2025-09-02,Health provider,1,Engaged,Legal aid referral,242.01,False,False,No response after outreach
+FAM-100441,washington,2025-04-20,School,2,Pending outreach,Child care support,554.45,False,False,Still active
+FAM-100496,Illinois,2025-02-13,Family resource center,5,Engaged,Parent coaching,188.2,True,True,Needs met
+FAM-100112,Ill.,2025-07-22,Family resource center,2,Engaged,Mental health referral,32.46,False,True,Still active
+FAM-100232,Illinois,2025-01-08,Family resource center,3,Pending outreach,Benefits enrollment,34.13,False,False,No response after outreach
+FAM-100676,illinois,2025-07-31,School,6,Engaged,Concrete supports,167.74,True,True,Needs met
+FAM-100373,texas,2025-05-17,School,2,Engaged,Concrete supports,1107.15,False,False,No response after outreach
+FAM-100233,Texas,2025-10-04,Health provider,3,Engaged,Benefits enrollment,13.86,False,True,Connected to ongoing service
+FAM-100615,Texas,2025-08-22,CPS hotline screened-out,3,Unable to contact,Housing navigation,336.04,False,False,No response after outreach
+FAM-100317,illinois,2025-09-23,CPS hotline screened-out,4,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100410,NY,2025-03-05,Community partner,3,Engaged,Legal aid referral,137.42,False,True,Connected to ongoing service
+FAM-100694,N.Y.,2025-02-02,School,3,Engaged,Housing navigation,460.06,False,False,Still active
+FAM-100358,new york,2025-02-03,Family resource center,1,Engaged,Mental health referral,68.06,False,True,Needs met
+FAM-100258,NY,2025-03-05,Health provider,0,Engaged,Benefits enrollment,19.82,False,False,No response after outreach
+FAM-100282,N.Y.,2025-09-02,CPS hotline screened-out,2,Engaged,Concrete supports,197.05,False,True,Needs met
+FAM-100376,N.Y.,2025-09-26,Self-referral,6,Engaged,Parent coaching,109.4,False,True,Still active
+FAM-100384,Ohio,2025-01-12,School,2,Declined,,0.0,False,False,Family declined services
+FAM-100224,Texas,2025-09-21,School,1,Engaged,Concrete supports,213.17,False,True,Needs met
+FAM-100735,illinois,2025-09-02,School,2,Pending outreach,Benefits enrollment,50.53,False,True,No response after outreach
+FAM-100636,texas,2025-03-27,Community partner,0,Pending outreach,,0.0,True,False,Still active
+FAM-100472,Texas,2025-06-07,Health provider,2,Engaged,Legal aid referral,243.46,False,True,Connected to ongoing service
+FAM-100347,illinois,2025-12-08,Health provider,3,Engaged,Child care support,510.83,False,True,Connected to ongoing service
+FAM-100505,N.Y.,2025-06-15,Health provider,6,Pending outreach,,0.0,False,True,No response after outreach
+FAM-100281,Wash.,2025-06-27,Community partner,1,Declined,,0.0,False,True,Family declined services
+FAM-100716,Texas,2025-07-08,Self-referral,2,Engaged,Parent coaching,39.82,False,True,Still active
+FAM-100736,ohio,2025-09-24,Self-referral,3,Engaged,Mental health referral,20.0,False,True,Connected to ongoing service
+FAM-100619,Washington,2025-02-21,Community partner,0,Unable to contact,Parent coaching,109.39,False,False,No response after outreach
+FAM-100664,IL,2025-08-07,Health provider,1,Engaged,Concrete supports,546.63,False,False,Still active
+FAM-100657,ohio,2025-08-20,CPS hotline screened-out,4,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100556,NY,2025-09-26,CPS hotline screened-out,1,Engaged,Housing navigation,81.64,False,False,No response after outreach
+FAM-100577,N.Y.,2025-07-11,School,1,Pending outreach,Mental health referral,42.2,False,False,No response after outreach
+FAM-100085,OH,2025-09-13,Community partner,2,Pending outreach,Concrete supports,108.65,False,False,No response after outreach
+FAM-100242,N.Y.,2025-02-04,School,5,Engaged,Legal aid referral,42.88,False,True,Needs met
+FAM-100159,Illinois,2025-10-14,Family resource center,4,Pending outreach,,0.0,True,False,No response after outreach
+FAM-100524,OH,2025-04-27,CPS hotline screened-out,2,Engaged,Legal aid referral,199.85,False,True,Still active
+FAM-100035,texas,2025-01-24,Health provider,2,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100540,Wash.,2025-09-16,School,1,Engaged,Benefits enrollment,69.64,False,False,No response after outreach
+FAM-100170,Ohio,2025-02-08,School,1,Engaged,Parent coaching,,False,False,No response after outreach
+FAM-100666,TX,2025-07-03,School,3,Engaged,Benefits enrollment,16.26,False,True,Connected to ongoing service
+FAM-100658,Washington,2025-01-27,Health provider,1,Pending outreach,Mental health referral,6.85,False,False,Still active
+FAM-100728,WA,2025-06-28,Self-referral,5,Declined,Legal aid referral,47.38,False,True,Family declined services
+FAM-100095,NY,2025-04-16,Health provider,4,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100563,Wash.,2025-03-08,School,1,Engaged,Benefits enrollment,215.75,False,True,Needs met
+FAM-100240,TX,2025-02-30,CPS hotline screened-out,1,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100574,new york,2025-01-03,School,4,Engaged,Concrete supports,96.69,False,True,Needs met
+FAM-100460,Ohio,2025-09-22,Health provider,3,Engaged,Housing navigation,358.25,False,True,Connected to ongoing service
+FAM-100553,Ohio,2025-04-27,School,0,Declined,Parent coaching,28.15,False,False,Family declined services
+FAM-100682,Illinois,2025-12-17,Family resource center,3,Engaged,Benefits enrollment,58.61,False,True,Needs met
+FAM-100206,ohio,2025-10-06,Self-referral,4,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100392,Illinois,2025-05-15,School,0,Engaged,Parent coaching,94.9,False,True,Connected to ongoing service
+FAM-100397,texas,2025-03-13,CPS hotline screened-out,0,Unable to contact,Mental health referral,144.15,False,False,No response after outreach
+FAM-100659,NY,2025-04-16,CPS hotline screened-out,1,Engaged,Housing navigation,177.66,True,True,Connected to ongoing service
+FAM-100217,new york,2025-02-05,Family resource center,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100004,Texas,2025-06-08,Health provider,2,Engaged,Mental health referral,124.83,False,True,Connected to ongoing service
+FAM-100642,WA,2025-11-08,Community partner,4,Engaged,Legal aid referral,106.76,True,True,Needs met
+FAM-100693,Illinois,2025-12-12,Health provider,3,Engaged,Concrete supports,305.19,True,True,Still active
+FAM-100612,Ill.,2025-10-14,School,5,Engaged,Mental health referral,66.87,False,False,No response after outreach
+FAM-100546,Wash.,2025-06-06,Health provider,1,Engaged,Legal aid referral,159.07,False,True,Connected to ongoing service
+FAM-100098,Illinois,2025-08-21,Health provider,0,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100573,Wash.,2025-01-18,CPS hotline screened-out,1,Engaged,Parent coaching,76.38,False,,Connected to ongoing service
+FAM-100406,Washington,2025-06-08,CPS hotline screened-out,5,Engaged,Parent coaching,81.13,False,True,Still active
+FAM-100502,new york,2025-12-18,Self-referral,4,Unable to contact,,0.0,False,True,No response after outreach
+FAM-100047,IL,2025-11-22,Community partner,1,Pending outreach,,0.0,False,False,Still active
+FAM-100032,WA,2025-02-03,School,2,Engaged,Housing navigation,166.35,False,True,Connected to ongoing service
+FAM-100200,ohio,2025-05-14,CPS hotline screened-out,2,Engaged,Benefits enrollment,52.25,False,False,No response after outreach
+FAM-100134,Illinois,2025-10-18,Self-referral,5,Pending outreach,Parent coaching,12.69,False,False,Still active
+FAM-100027,Texas,2025-10-28,School,1,Engaged,Housing navigation,533.34,False,False,Still active
+FAM-100684,texas,2025-03-03,School,3,Engaged,Child care support,257.04,False,True,Connected to ongoing service
+FAM-100230,TX,2025-06-19,CPS hotline screened-out,1,Engaged,Mental health referral,73.73,False,False,Still active
+FAM-100489,IL,2025-08-10,Community partner,2,Engaged,Concrete supports,224.81,False,True,Needs met
+FAM-100378,OH,2025-05-19,Family resource center,1,Engaged,Housing navigation,474.35,False,True,Still active
+FAM-100288,illinois,2025-07-17,Self-referral,3,Engaged,Housing navigation,280.82,False,True,Needs met
+FAM-100418,Illinois,2025-04-19,Community partner,2,Engaged,Legal aid referral,150.63,False,True,Needs met
+FAM-100391,IL,2025-03-07,School,2,Pending outreach,,0.0,False,True,Still active
+FAM-100592,Ill.,2025-03-29,School,0,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100498,NY,2025-12-05,Health provider,2,Pending outreach,Child care support,855.56,False,False,No response after outreach
+FAM-100138,N.Y.,2025-05-07,Health provider,3,Engaged,Child care support,268.93,False,True,Connected to ongoing service
+FAM-100062,OH,2025-05-14,Self-referral,3,Unable to contact,,0.0,False,,No response after outreach
+FAM-100471,new york,2025-10-21,CPS hotline screened-out,2,Declined,,0.0,False,True,Family declined services
+FAM-100647,washington,2025-07-15,Health provider,4,Unable to contact,Housing navigation,65.38,True,True,No response after outreach
+FAM-100128,ohio,2025-07-29,CPS hotline screened-out,1,Engaged,Child care support,84.3,True,True,Connected to ongoing service
+FAM-100250,new york,2025-03-07,CPS hotline screened-out,2,Engaged,Housing navigation,196.42,False,True,Connected to ongoing service
+FAM-100520,washington,2025-05-11,CPS hotline screened-out,2,Engaged,Legal aid referral,53.21,False,True,Still active
+FAM-100064,Texas,2025-05-30,Family resource center,4,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100014,Washington,2025-09-19,School,1,Unable to contact,Mental health referral,,False,False,No response after outreach
+FAM-100156,TX,2025-02-16,Community partner,2,Declined,,0.0,False,True,Family declined services
+FAM-100040,NY,2025-03-02,Family resource center,1,Engaged,Housing navigation,378.14,False,True,Needs met
+FAM-100492,TX,2025-10-02,Self-referral,0,Unable to contact,Mental health referral,150.35,True,False,No response after outreach
+FAM-100379,Texas,2025-04-06,School,5,Unable to contact,,180.41,False,False,No response after outreach
+FAM-100187,washington,2025-05-20,Self-referral,2,Engaged,Legal aid referral,57.29,False,True,Still active
+FAM-100216,Ohio,2025-01-29,Health provider,2,Engaged,Housing navigation,126.43,False,True,Connected to ongoing service
+FAM-100052,washington,2025-05-13,Self-referral,4,Engaged,Parent coaching,35.73,True,True,Connected to ongoing service
+FAM-100337,WA,2025-04-26,Self-referral,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100295,IL,2025-07-10,Family resource center,4,Pending outreach,Housing navigation,366.73,True,False,No response after outreach
+FAM-100251,Texas,2025-06-30,Health provider,2,Unable to contact,Mental health referral,35.67,False,False,No response after outreach
+FAM-100461,Texas,2025-02-21,Community partner,1,Engaged,Concrete supports,408.77,False,True,Needs met
+FAM-100455,Texas,2025-07-22,School,2,Engaged,Benefits enrollment,192.92,False,True,Needs met
+FAM-100499,texas,2025-06-05,Health provider,1,Engaged,,609.57,False,True,Connected to ongoing service
+FAM-100269,texas,2025-08-04,Health provider,2,Engaged,Parent coaching,2500.0,False,True,Still active
+FAM-100201,Wash.,2025-11-28,Community partner,2,Engaged,Legal aid referral,87.82,False,True,Connected to ongoing service
+FAM-100161,Ohio,2025-08-31,Health provider,2,Engaged,Parent coaching,388.51,False,True,Still active
+FAM-100555,N.Y.,2025-07-04,Community partner,0,Engaged,Mental health referral,34.33,False,False,No response after outreach
+FAM-100401,texas,13/15/2025,Health provider,1,Engaged,Benefits enrollment,70.3,False,True,Connected to ongoing service
+FAM-100476,Illinois,2025-11-06,Self-referral,2,Engaged,Child care support,311.87,False,True,Needs met
+FAM-100105,NY,2025-10-15,CPS hotline screened-out,1,Engaged,Parent coaching,33.27,False,True,Needs met
+FAM-100565,New York,2025-03-28,Community partner,0,Declined,Housing navigation,23.61,False,False,Family declined services
+FAM-100389,Wash.,2025-02-25,Self-referral,1,Pending outreach,,0.0,True,False,No response after outreach
+FAM-100001,washington,2025-10-10,School,3,Engaged,Parent coaching,36.32,False,True,Needs met
+FAM-100723,Wash.,2025-02-13,Health provider,2,Declined,,0.0,False,False,Family declined services
+FAM-100561,WA,2025-01-16,Health provider,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100080,Illinois,2025-12-10,Community partner,2,Engaged,Parent coaching,24.51,False,True,Still active
+FAM-100205,OH,2025-04-08,CPS hotline screened-out,1,Pending outreach,,162.99,False,False,No response after outreach
+FAM-100034,washington,2025-11-21,CPS hotline screened-out,3,Engaged,Concrete supports,178.29,False,True,Needs met
+FAM-100508,OH,2025-04-09,School,1,Engaged,Benefits enrollment,5.9,False,True,Needs met
+FAM-100427,Wash.,2025-10-21,CPS hotline screened-out,2,Engaged,Parent coaching,21.0,False,,Needs met
+FAM-100454,New York,2025-08-06,Health provider,0,Engaged,Mental health referral,,False,True,Needs met
+FAM-100366,Ill.,2025-06-21,School,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100091,TX,2025-10-21,Family resource center,1,Engaged,Concrete supports,159.13,False,True,Still active
+FAM-100339,TX,2025-12-14,Health provider,2,Engaged,Mental health referral,8.39,False,False,No response after outreach
+FAM-100564,Illinois,2025-11-21,Community partner,4,Engaged,Legal aid referral,141.91,True,True,Connected to ongoing service
+FAM-100345,Ohio,2025-04-04,Health provider,4,Engaged,Housing navigation,75.88,False,True,Needs met
+FAM-100241,Texas,2025-08-02,Health provider,0,Engaged,Concrete supports,127.1,False,False,Still active
+FAM-100013,illinois,2025-10-05,Community partner,1,Engaged,Parent coaching,40.53,False,True,Needs met
+FAM-100315,NY,2025-08-29,Community partner,2,Engaged,Benefits enrollment,77.73,False,True,Connected to ongoing service
+FAM-100600,Texas,2025-08-13,Self-referral,0,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100387,illinois,2025-10-31,Family resource center,5,Unable to contact,,0.0,True,True,No response after outreach
+FAM-100273,TX,2025-12-16,School,1,Engaged,Concrete supports,200.93,False,False,Still active
+FAM-100166,OH,2025-04-28,School,3,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100247,Wash.,2025-06-01,CPS hotline screened-out,3,Engaged,Parent coaching,270.37,False,True,Needs met
+FAM-100646,TX,2025-06-18,Community partner,2,Engaged,Legal aid referral,53.6,False,True,Needs met
+FAM-100484,OH,2025-06-18,CPS hotline screened-out,3,Engaged,Legal aid referral,57.83,False,True,Connected to ongoing service
+FAM-100336,TX,2025-12-18,Community partner,4,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100504,ohio,2025-04-11,Community partner,1,Engaged,Legal aid referral,132.97,False,True,Connected to ongoing service
+FAM-100243,illinois,2025-08-26,CPS hotline screened-out,2,Engaged,Mental health referral,85.81,True,True,Needs met
+FAM-100566,washington,13/15/2025,School,1,Engaged,Housing navigation,278.24,False,True,Needs met
+FAM-100562,Illinois,2025-06-29,Family resource center,3,Unable to contact,Parent coaching,175.81,False,False,No response after outreach
+FAM-100686,texas,2025-05-29,Community partner,2,Declined,,0.0,False,True,Family declined services
+FAM-100189,Texas,2025-04-21,School,0,Unable to contact,Benefits enrollment,131.35,False,False,No response after outreach
+FAM-100699,washington,2025-02-04,School,0,Engaged,Benefits enrollment,5.56,False,True,Needs met
+FAM-100475,illinois,2025-10-14,Health provider,6,Engaged,Concrete supports,338.6,False,True,Needs met
+FAM-100681,washington,2025-02-20,Health provider,2,Pending outreach,,0.0,False,False,Still active
+FAM-100510,New York,2025-12-30,Family resource center,2,Unable to contact,,0.0,False,False,No response after outreach
+FAM-100058,WA,2025-09-29,Community partner,4,Pending outreach,,0.0,False,False,Still active
+FAM-100474,Wash.,2025-08-20,Family resource center,2,Engaged,,30.41,False,True,Connected to ongoing service
+FAM-100560,illinois,2025-07-15,CPS hotline screened-out,1,Engaged,Concrete supports,197.54,False,True,Still active
+FAM-100252,Ill.,2025-03-10,School,3,Engaged,Parent coaching,61.38,False,True,Needs met
+FAM-100021,WA,2025-05-16,School,0,Engaged,Parent coaching,71.63,False,True,Connected to ongoing service
+FAM-100313,TX,2025-04-13,Self-referral,3,Engaged,Mental health referral,6.58,False,True,Needs met
+FAM-100459,texas,2025-02-08,Self-referral,1,Unable to contact,Mental health referral,127.82,False,True,No response after outreach
+FAM-100160,illinois,2025-12-30,Health provider,2,Engaged,Mental health referral,67.15,False,True,Connected to ongoing service
+FAM-100276,WA,2025-06-20,Health provider,1,Declined,,0.0,False,False,Family declined services
+FAM-100191,Texas,2025-08-19,CPS hotline screened-out,3,Pending outreach,,0.0,False,False,Still active
+FAM-100385,Texas,2025-02-14,Health provider,4,Engaged,Concrete supports,349.46,False,True,Needs met
+FAM-100413,TX,2025-02-18,Family resource center,1,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100491,Washington,2025-11-13,Self-referral,4,Engaged,Housing navigation,94.47,False,True,Needs met
+FAM-100343,Texas,2025-07-07,Health provider,1,Pending outreach,Benefits enrollment,105.74,True,False,Still active
+FAM-100308,Ohio,2025-04-26,Family resource center,2,Declined,,0.0,False,True,Family declined services
+FAM-100661,New York,2025-09-26,CPS hotline screened-out,3,Declined,,0.0,False,True,Family declined services
+FAM-100130,Texas,2025-07-26,School,2,Engaged,Legal aid referral,20.24,False,True,Needs met
+FAM-100663,Ohio,13/15/2025,School,2,Engaged,Concrete supports,857.06,False,True,Still active
+FAM-100099,new york,2025-02-21,Community partner,3,Engaged,Concrete supports,197.51,False,True,Still active
+FAM-100372,Ohio,2025-05-30,Health provider,3,Engaged,Concrete supports,182.94,False,True,Connected to ongoing service
+FAM-100087,Wash.,2025-04-25,Family resource center,4,Engaged,Concrete supports,180.75,False,True,Still active
+FAM-100458,texas,2025-11-03,CPS hotline screened-out,2,Engaged,Concrete supports,346.22,False,True,Needs met
+FAM-100330,OH,2025-07-19,Family resource center,1,Engaged,Child care support,326.66,False,False,No response after outreach
+FAM-100214,IL,2025-09-26,Self-referral,3,Pending outreach,,0.0,False,False,No response after outreach
+FAM-100466,TX,2025-03-02,Community partner,2,Pending outreach,,0.0,True,,No response after outreach
+FAM-100121,ohio,2025-09-01,Family resource center,2,Engaged,Concrete supports,770.49,False,True,Still active
+FAM-100614,Texas,2025-09-08,Self-referral,1,Engaged,Child care support,,False,True,Needs met
+FAM-100020,Ohio,2025-07-02,Health provider,2,Engaged,Housing navigation,396.14,False,True,Needs met
+FAM-100700,New York,2025-07-09,CPS hotline screened-out,1,Engaged,Housing navigation,60.01,False,True,Needs met
+FAM-100071,Washington,2025-03-11,Community partner,3,Engaged,Parent coaching,18.06,False,True,Still active
+FAM-100106,IL,2025-10-12,Community partner,7,Unable to contact,,0.0,True,False,No response after outreach
+FAM-100270,WA,2026-99-01,Community partner,0,Engaged,Legal aid referral,44.49,False,True,Needs met
+FAM-100435,IL,2025-02-15,Self-referral,2,Declined,Child care support,278.8,False,True,Family declined services
+FAM-100102,texas,2025-10-21,Health provider,2,Unable to contact,Parent coaching,41.31,False,False,No response after outreach

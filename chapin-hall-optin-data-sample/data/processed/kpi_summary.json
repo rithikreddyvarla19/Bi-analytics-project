@@ -1,0 +1,72 @@
+{
+  "total_referrals": 739,
+  "engagement_rate": 0.609,
+  "outreach_completion_rate": 0.663,
+  "follow_up_completion_rate": 0.644,
+  "average_outreach_attempts": 2.3,
+  "case_review_rate": 0.143,
+  "total_flexible_funds": 111931.6,
+  "average_flexible_funds_per_referral": 151.46,
+  "flexible_funds_distribution_by_site": {
+    "Illinois": 25643.86,
+    "Texas": 24973.06,
+    "Washington": 20139.83,
+    "New York": 19585.61,
+    "Ohio": 18640.58,
+    "Unknown": 2948.66
+  },
+  "service_type_breakdown": {
+    "No service recorded": 189,
+    "Parent coaching": 88,
+    "Housing navigation": 87,
+    "Mental health referral": 82,
+    "Benefits enrollment": 77,
+    "Legal aid referral": 76,
+    "Concrete supports": 76,
+    "Child care support": 64
+  },
+  "outcome_status_by_site": {
+    "Illinois": {
+      "Connected to ongoing service": 23,
+      "Family declined services": 17,
+      "Needs met": 41,
+      "No response after outreach": 44,
+      "Still active": 48
+    },
+    "New York": {
+      "Connected to ongoing service": 28,
+      "Family declined services": 22,
+      "Needs met": 32,
+      "No response after outreach": 34,
+      "Still active": 21
+    },
+    "Ohio": {
+      "Connected to ongoing service": 21,
+      "Family declined services": 16,
+      "Needs met": 24,
+      "No response after outreach": 30,
+      "Still active": 23
+    },
+    "Texas": {
+      "Connected to ongoing service": 27,
+      "Family declined services": 17,
+      "Needs met": 31,
+      "No response after outreach": 64,
+      "Still active": 25
+    },
+    "Unknown": {
+      "Connected to ongoing service": 3,
+      "Family declined services": 2,
+      "Needs met": 2,
+      "No response after outreach": 1,
+      "Still active": 1
+    },
+    "Washington": {
+      "Connected to ongoing service": 23,
+      "Family declined services": 20,
+      "Needs met": 34,
+      "No response after outreach": 35,
+      "Still active": 30
+    }
+  }
+}

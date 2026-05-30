@@ -1,0 +1,41 @@
+{
+  "input_rows": 774,
+  "duplicate_family_ids_detected": 24,
+  "missing_values_by_field": {
+    "family_id": 0,
+    "site_state": 10,
+    "referral_date": 0,
+    "referral_source": 0,
+    "outreach_attempts": 0,
+    "engagement_status": 0,
+    "service_type": 202,
+    "flexible_funds_amount": 13,
+    "case_review_flag": 0,
+    "follow_up_completed": 18,
+    "outcome_status": 0
+  },
+  "invalid_referral_dates_detected": 12,
+  "missing_flexible_funds_detected": 13,
+  "negative_fund_amounts_detected": 1,
+  "fund_outliers_over_1500_detected": 8,
+  "rows_removed_invalid_dates": 12,
+  "rows_removed_duplicate_family_ids": 23,
+  "output_rows": 739,
+  "standardized_states": [
+    "Illinois",
+    "New York",
+    "Ohio",
+    "Texas",
+    "Unknown",
+    "Washington"
+  ],
+  "records_requiring_case_review": 106,
+  "records_with_capped_fund_amounts": 8,
+  "validation_checks": {
+    "family_id_unique": true,
+    "no_invalid_referral_dates": true,
+    "no_negative_fund_amounts": true,
+    "engagement_values_valid": true,
+    "outcome_values_valid": true
+  }
+}
