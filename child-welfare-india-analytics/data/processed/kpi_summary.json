@@ -1,0 +1,123 @@
+{
+  "total_cases": 9771,
+  "cases_by_state": {
+    "Andhra Pradesh": 923,
+    "Delhi": 805,
+    "Karnataka": 1094,
+    "Kerala": 671,
+    "Maharashtra": 1278,
+    "Rajasthan": 974,
+    "Tamil Nadu": 944,
+    "Telangana": 856,
+    "Uttar Pradesh": 1242,
+    "West Bengal": 984
+  },
+  "cases_by_referral_source": {
+    "Childline/Helpline": 1924,
+    "School": 1757,
+    "Community Worker": 1681,
+    "NGO Partner": 1342,
+    "Healthcare Facility": 1212,
+    "Police": 1088,
+    "Self/Family": 767
+  },
+  "high_risk_case_percentage": 28.47,
+  "average_days_to_first_contact": 4.56,
+  "follow_up_completion_rate": 58.44,
+  "service_utilization_by_type": {
+    "Counseling": 1811,
+    "Nutrition Support": 1608,
+    "Education Kit": 1426,
+    "Medical Referral": 1345,
+    "Family Counseling": 1194,
+    "Shelter Referral": 919,
+    "Legal Aid Referral": 800,
+    "Cash Support": 668
+  },
+  "outcome_category_distribution": {
+    "Stabilized": 28.27,
+    "Improved Access to Services": 23.87,
+    "Ongoing Support Needed": 22.2,
+    "Referred to Specialist Agency": 17.35,
+    "Unable to Verify Outcome": 8.32
+  },
+  "support_amount_distribution_by_state": {
+    "Andhra Pradesh": {
+      "count": 923,
+      "mean": 4212.61,
+      "median": 3731.0,
+      "min": 0,
+      "max": 11049
+    },
+    "Delhi": {
+      "count": 805,
+      "mean": 4351.22,
+      "median": 3950.0,
+      "min": 0,
+      "max": 11049
+    },
+    "Karnataka": {
+      "count": 1094,
+      "mean": 4308.01,
+      "median": 3896.0,
+      "min": 0,
+      "max": 11049
+    },
+    "Kerala": {
+      "count": 671,
+      "mean": 4397.92,
+      "median": 3983.0,
+      "min": 100,
+      "max": 11049
+    },
+    "Maharashtra": {
+      "count": 1278,
+      "mean": 4346.07,
+      "median": 3979.5,
+      "min": 0,
+      "max": 11049
+    },
+    "Rajasthan": {
+      "count": 974,
+      "mean": 4347.64,
+      "median": 3869.0,
+      "min": 0,
+      "max": 11049
+    },
+    "Tamil Nadu": {
+      "count": 944,
+      "mean": 4328.63,
+      "median": 3900.5,
+      "min": 0,
+      "max": 11049
+    },
+    "Telangana": {
+      "count": 856,
+      "mean": 4295.35,
+      "median": 3926.5,
+      "min": 100,
+      "max": 11049
+    },
+    "Uttar Pradesh": {
+      "count": 1242,
+      "mean": 4417.92,
+      "median": 4002.5,
+      "min": 0,
+      "max": 11049
+    },
+    "West Bengal": {
+      "count": 984,
+      "mean": 4371.32,
+      "median": 3956.0,
+      "min": 0,
+      "max": 11049
+    }
+  },
+  "closure_rate_by_risk_level": {
+    "Critical": 47.14,
+    "High": 48.41,
+    "Low": 48.78,
+    "Medium": 49.47
+  },
+  "overall_closure_rate": 48.85
+}

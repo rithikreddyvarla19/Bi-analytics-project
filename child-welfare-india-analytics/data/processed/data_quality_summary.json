@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "initial_rows": 10000,
+    "clean_rows": 9771,
+    "rows_removed": 229,
+    "duplicate_case_ids_removed": 139,
+    "invalid_dates_removed": 90,
+    "missing_districts_flagged_unknown": 276,
+    "synthetic_data_notice": "This dataset is fully synthetic and contains no real child, family, NGO, or government records."
+  },
+  "validation": {
+    "unique_case_id": true,
+    "states_in_expected_list": true,
+    "referral_dates_valid": true,
+    "support_amount_non_negative": true,
+    "case_status_values": [
+      "Closed",
+      "Escalated",
+      "Open",
+      "Referred"
+    ],
+    "date_range": {
+      "min": "2023-01-01",
+      "max": "2025-12-31"
+    }
+  },
+  "issues": [
+    {
+      "issue": "Duplicate case IDs",
+      "records_affected_before_cleaning": 139,
+      "records_remaining_after_cleaning": 0,
+      "action_taken": "Dropped duplicate case_id records, keeping the first observed record."
+    },
+    {
+      "issue": "Missing district values",
+      "records_affected_before_cleaning": 276,
+      "records_remaining_after_cleaning": 276,
+      "action_taken": "Imputed missing districts as Unknown District for transparent reporting."
+    },
+    {
+      "issue": "Inconsistent state spellings",
+      "records_affected_before_cleaning": 1595,
+      "records_remaining_after_cleaning": 0,
+      "action_taken": "Standardized state spelling and abbreviations to canonical state names."
+    },
+    {
+      "issue": "Invalid referral dates",
+      "records_affected_before_cleaning": 90,
+      "records_remaining_after_cleaning": 0,
+      "action_taken": "Removed records with invalid or missing referral dates."
+    },
+    {
+      "issue": "Inconsistent case status labels",
+      "records_affected_before_cleaning": 187,
+      "records_remaining_after_cleaning": 0,
+      "action_taken": "Mapped common misspellings, whitespace, and capitalization variants to standard labels."
+    },
+    {
+      "issue": "Outlier support amounts",
+      "records_affected_before_cleaning": 56,
+      "records_remaining_after_cleaning": 0,
+      "action_taken": "Capped negative and extreme support amounts to a non-negative range with an upper cap of INR 11,049."
+    }
+  ]
+}

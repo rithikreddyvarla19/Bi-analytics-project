@@ -1,0 +1,7 @@
+issue,records_affected_before_cleaning,records_remaining_after_cleaning,action_taken
+Duplicate case IDs,139,0,"Dropped duplicate case_id records, keeping the first observed record."
+Missing district values,276,276,Imputed missing districts as Unknown District for transparent reporting.
+Inconsistent state spellings,1595,0,Standardized state spelling and abbreviations to canonical state names.
+Invalid referral dates,90,0,Removed records with invalid or missing referral dates.
+Inconsistent case status labels,187,0,"Mapped common misspellings, whitespace, and capitalization variants to standard labels."
+Outlier support amounts,56,0,"Capped negative and extreme support amounts to a non-negative range with an upper cap of INR 11,049."
