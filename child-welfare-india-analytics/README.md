@@ -14,27 +14,35 @@ Child welfare support programs often coordinate referrals from helplines, school
 
 ```text
 child-welfare-india-analytics/
-├── README.md
-├── requirements.txt
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_eda.ipynb
-│   └── 03_kpi_reporting.ipynb
-├── src/
-│   ├── generate_synthetic_data.py
-│   ├── clean_validate_data.py
-│   ├── kpi_metrics.py
-│   └── create_visuals.py
-├── reports/
-│   ├── executive_summary.md
-│   ├── stakeholder_report.md
-│   └── data_quality_report.md
-├── dashboard/
-│   └── dashboard_wireframe.md
-└── visuals/
+|-- README.md
+|-- requirements.txt
+|-- data/
+|   |-- raw/
+|   `-- processed/
+|-- docs/
+|   |-- project_documentation.md
+|   |-- data_dictionary.md
+|   |-- methodology.md
+|   |-- kpi_definitions.md
+|   |-- technical_runbook.md
+|   |-- dashboard_guide.md
+|   `-- portfolio_presentation_guide.md
+|-- notebooks/
+|   |-- 01_data_cleaning.ipynb
+|   |-- 02_eda.ipynb
+|   `-- 03_kpi_reporting.ipynb
+|-- src/
+|   |-- generate_synthetic_data.py
+|   |-- clean_validate_data.py
+|   |-- kpi_metrics.py
+|   `-- create_visuals.py
+|-- reports/
+|   |-- executive_summary.md
+|   |-- stakeholder_report.md
+|   `-- data_quality_report.md
+|-- dashboard/
+|   `-- dashboard_wireframe.md
+`-- visuals/
 ```
 
 ## Dataset
@@ -120,3 +128,15 @@ python src/create_visuals.py
 ## Portfolio Positioning
 
 This project is designed as a professional work sample for analytics, data analyst, public-sector analytics, social-impact analytics, program evaluation, and reporting roles. It emphasizes not only technical execution, but also the ability to explain data quality, operational performance, and program recommendations to non-technical stakeholders.
+
+## Detailed Documentation
+
+The `docs/` folder contains expanded documentation for reviewers and hiring teams:
+
+- `project_documentation.md`: complete project narrative and end-to-end workflow
+- `data_dictionary.md`: field-level definitions, expected values, and cleaning rules
+- `methodology.md`: synthetic data design, quality checks, and analytical assumptions
+- `kpi_definitions.md`: KPI formulas, interpretation notes, and limitations
+- `technical_runbook.md`: setup, execution, outputs, troubleshooting, and reproducibility
+- `dashboard_guide.md`: dashboard audience, page layout, filters, and design guidance
+- `portfolio_presentation_guide.md`: how to present the project in interviews and applications
