@@ -17,7 +17,7 @@ Important: all data in this repository is synthetic. It does not contain real fa
 ## Repository Structure
 
 ```text
-chapin-hall-optin-data-sample/
+optin-family-services-data-dashboard/
 ├── README.md
 ├── data/
 │   ├── raw/
