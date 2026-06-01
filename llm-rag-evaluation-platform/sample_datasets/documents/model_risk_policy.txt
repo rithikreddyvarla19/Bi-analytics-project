@@ -1,0 +1,7 @@
+Model Risk and RAG Monitoring Policy
+
+The RAG assistant must provide source-cited responses for policy, compliance, and operational questions.
+Hallucination monitoring is performed weekly using a validated ground-truth dataset and monthly using human review.
+Any production release with a faithfulness score below 0.85 must be blocked until remediation is approved by the model risk owner.
+
+Prompt experiments are tracked in MLflow with prompt id, model name, retriever settings, latency, and evaluation metrics.

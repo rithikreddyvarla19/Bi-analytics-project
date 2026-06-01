@@ -1,0 +1,4 @@
+id,question,expected_answer,expected_contexts,expected_source_ids
+gt-001,How many weeks of paid parental leave are available?,Employees receive 16 weeks of paid parental leave.,Employees receive 16 weeks of paid parental leave after one year of service.,acme_handbook
+gt-002,How often is hallucination monitoring performed?,Hallucination monitoring is performed weekly with a ground-truth dataset and monthly with human review.,Hallucination monitoring is performed weekly using a validated ground-truth dataset and monthly using human review.,model_risk_policy
+gt-003,What happens if faithfulness falls below 0.85?,A production release below 0.85 faithfulness is blocked until remediation is approved by the model risk owner.,Any production release with a faithfulness score below 0.85 must be blocked until remediation is approved by the model risk owner.,model_risk_policy
