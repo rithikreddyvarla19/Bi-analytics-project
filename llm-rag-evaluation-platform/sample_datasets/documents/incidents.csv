@@ -1,0 +1,4 @@
+incident_id,department,summary,severity,resolution_sla_hours
+INC-1001,Security,Quarterly training attestation was delayed for a contractor population,medium,48
+INC-1002,HR,Parental leave request workflow failed for a small number of employees,high,24
+INC-1003,Model Risk,Weekly hallucination monitoring detected unsupported claims in an experimental prompt,high,12

@@ -1,0 +1,41 @@
+{
+  "family": "llm-rag-evaluation-platform",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "2048",
+  "memory": "4096",
+  "executionRoleArn": "arn:aws:iam::<account-id>:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::<account-id>:role/llm-rag-platform-task-role",
+  "containerDefinitions": [
+    {
+      "name": "api",
+      "image": "<image-uri>",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {"name": "ENVIRONMENT", "value": "production"},
+        {"name": "VECTOR_INDEX_PATH", "value": "/app/artifacts/vector_index"},
+        {"name": "EMBEDDING_PROVIDER", "value": "openai"},
+        {"name": "LLM_PROVIDER", "value": "openai"}
+      ],
+      "secrets": [
+        {"name": "OPENAI_API_KEY", "valueFrom": "arn:aws:ssm:<region>:<account-id>:parameter/rag/openai-api-key"},
+        {"name": "DATABASE_URL", "valueFrom": "arn:aws:ssm:<region>:<account-id>:parameter/rag/database-url"},
+        {"name": "MLFLOW_TRACKING_URI", "valueFrom": "arn:aws:ssm:<region>:<account-id>:parameter/rag/mlflow-uri"}
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/llm-rag-evaluation-platform",
+          "awslogs-region": "<region>",
+          "awslogs-stream-prefix": "api"
+        }
+      }
+    }
+  ]
+}
