@@ -1,0 +1,47 @@
+flowchart LR
+    subgraph Sources
+        PDF[PDF Files]
+        CSV[CSV Files]
+        TXT[Text Files]
+    end
+
+    subgraph Ingestion
+        Loader[Document Loaders]
+        Chunker[Recursive Chunker]
+        Embed[Embedding Pipeline]
+    end
+
+    subgraph Retrieval
+        FAISS[FAISS Vector Index]
+        Retriever[Retriever]
+    end
+
+    subgraph Generation
+        Prompt[Prompt Registry]
+        LLM[OpenAI or HuggingFace LLM]
+        API[FastAPI Knowledge Assistant API]
+    end
+
+    subgraph Evaluation
+        GT[Ground Truth Dataset]
+        Metrics[Top-3 Accuracy, Faithfulness, Hallucination, Calibration, Context Recall, Relevancy]
+        MLflow[MLflow Tracking]
+    end
+
+    subgraph Monitoring
+        Postgres[(PostgreSQL)]
+        Feedback[User Feedback]
+        Streamlit[Streamlit Dashboard]
+    end
+
+    PDF --> Loader
+    CSV --> Loader
+    TXT --> Loader
+    Loader --> Chunker --> Embed --> FAISS
+    FAISS --> Retriever --> Prompt --> LLM --> API
+    API --> Feedback --> Postgres
+    API --> Streamlit
+    GT --> Metrics
+    API --> Metrics --> MLflow
+    MLflow --> Streamlit
+    Postgres --> Streamlit
