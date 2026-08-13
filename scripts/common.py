@@ -30,7 +30,9 @@ def ensure_dir(path: Path) -> Path:
     return path
 
 
-def write_run_metadata(metadata: dict[str, Any], file_name: str = "pipeline_run_metadata.json") -> Path:
+def write_run_metadata(
+    metadata: dict[str, Any], file_name: str = "pipeline_run_metadata.json"
+) -> Path:
     ensure_dir(OUTPUT_ROOT / "observability")
     output_path = OUTPUT_ROOT / "observability" / file_name
     payload = {

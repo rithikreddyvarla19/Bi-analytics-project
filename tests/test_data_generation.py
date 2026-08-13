@@ -1,4 +1,9 @@
-from scripts.generate_data import generate_customers, generate_products, generate_orders, generate_clickstream
+from scripts.generate_data import (
+    generate_customers,
+    generate_products,
+    generate_orders,
+    generate_clickstream,
+)
 
 
 def test_data_generation_shapes():

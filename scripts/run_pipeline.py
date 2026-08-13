@@ -10,7 +10,13 @@ import pandas as pd
 try:
     from common import DATA_ROOT, OUTPUT_ROOT, configure_logging, ensure_dir, write_run_metadata
 except ModuleNotFoundError:
-    from scripts.common import DATA_ROOT, OUTPUT_ROOT, configure_logging, ensure_dir, write_run_metadata
+    from scripts.common import (
+        DATA_ROOT,
+        OUTPUT_ROOT,
+        configure_logging,
+        ensure_dir,
+        write_run_metadata,
+    )
 
 logger = configure_logging("run_pipeline")
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -38,7 +44,6 @@ def build_run_report(step_metrics: list[dict[str, object]]) -> None:
     ensure_dir(OUTPUT_ROOT / "observability")
     metrics_df = pd.DataFrame(step_metrics)
     metrics_df.to_csv(OUTPUT_ROOT / "observability" / "pipeline_step_metrics.csv", index=False)
-
 
 
 def main() -> None:
@@ -87,4 +92,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

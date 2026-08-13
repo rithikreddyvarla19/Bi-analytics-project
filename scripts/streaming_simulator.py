@@ -26,7 +26,10 @@ def _create_event(event_id: int, product_ids: list[str], event_time: datetime) -
     return {
         "event_id": f"STR{event_id:010d}",
         "event_ts": event_time.isoformat(),
-        "event_type": np.random.choice(["inventory_update", "product_view", "add_to_cart", "purchase"], p=[0.2, 0.45, 0.2, 0.15]),
+        "event_type": np.random.choice(
+            ["inventory_update", "product_view", "add_to_cart", "purchase"],
+            p=[0.2, 0.45, 0.2, 0.15],
+        ),
         "product_id": np.random.choice(product_ids),
         "channel": np.random.choice(["web", "mobile", "store"]),
         "region": np.random.choice(["Northeast", "Southeast", "Midwest", "West"]),
@@ -53,7 +56,9 @@ def main() -> None:
         batch_path = incoming_dir / batch_name
         with batch_path.open("w", encoding="utf-8") as handle:
             for _ in range(args.events_per_batch):
-                event = _create_event(event_counter, product_ids, base_ts + timedelta(seconds=event_counter * 3))
+                event = _create_event(
+                    event_counter, product_ids, base_ts + timedelta(seconds=event_counter * 3)
+                )
                 handle.write(json.dumps(event) + "\n")
                 event_counter += 1
 
@@ -64,4 +69,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

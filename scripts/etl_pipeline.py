@@ -17,7 +17,9 @@ def _load_raw(raw_dir: Path) -> dict[str, pd.DataFrame]:
     }
 
 
-def _data_quality_report(raw: dict[str, pd.DataFrame], cleaned: dict[str, pd.DataFrame]) -> pd.DataFrame:
+def _data_quality_report(
+    raw: dict[str, pd.DataFrame], cleaned: dict[str, pd.DataFrame]
+) -> pd.DataFrame:
     records: list[dict[str, object]] = []
     for name, raw_df in raw.items():
         clean_df = cleaned[name]
@@ -53,7 +55,8 @@ def clean_data(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
 
     order_items = raw["order_items"].drop_duplicates(subset=["order_item_id"]).copy()
     order_items = order_items[
-        order_items["order_id"].isin(orders["order_id"]) & order_items["product_id"].isin(products["product_id"])
+        order_items["order_id"].isin(orders["order_id"])
+        & order_items["product_id"].isin(products["product_id"])
     ].copy()
     order_items["quantity"] = order_items["quantity"].clip(lower=1)
     order_items["discount_rate"] = order_items["discount_rate"].clip(lower=0, upper=0.4)
@@ -67,9 +70,7 @@ def clean_data(raw: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
         regions = pd.concat(
             [
                 regions,
-                pd.DataFrame(
-                    [{"region_code": "UNK", "region_name": "Unknown", "country": "USA"}]
-                ),
+                pd.DataFrame([{"region_code": "UNK", "region_name": "Unknown", "country": "USA"}]),
             ],
             ignore_index=True,
         )
@@ -100,14 +101,32 @@ def build_star_schema(cleaned: dict[str, pd.DataFrame]) -> dict[str, pd.DataFram
     dim_customers["region_key"] = dim_customers["region_code"].map(region_map)
     dim_customers["customer_key"] = np.arange(1, len(dim_customers) + 1)
     dim_customers = dim_customers[
-        ["customer_key", "customer_id", "first_name", "last_name", "email", "signup_date", "loyalty_tier", "region_key"]
+        [
+            "customer_key",
+            "customer_id",
+            "first_name",
+            "last_name",
+            "email",
+            "signup_date",
+            "loyalty_tier",
+            "region_key",
+        ]
     ]
     customer_key_map = dim_customers.set_index("customer_id")["customer_key"].to_dict()
 
     dim_products = products.copy()
     dim_products["product_key"] = np.arange(1, len(dim_products) + 1)
     dim_products = dim_products[
-        ["product_key", "product_id", "product_name", "category", "subcategory", "brand", "unit_cost", "list_price"]
+        [
+            "product_key",
+            "product_id",
+            "product_name",
+            "category",
+            "subcategory",
+            "brand",
+            "unit_cost",
+            "list_price",
+        ]
     ]
     product_key_map = dim_products.set_index("product_id")["product_key"].to_dict()
 
@@ -141,8 +160,8 @@ def build_star_schema(cleaned: dict[str, pd.DataFrame]) -> dict[str, pd.DataFram
     fact["gross_revenue"] = fact["quantity"] * fact["unit_price"]
     fact["discount_amount"] = fact["gross_revenue"] * fact["discount_rate"]
     fact["net_revenue"] = fact["gross_revenue"] - fact["discount_amount"]
-    fact["refunded_amount"] = (
-        fact["returned_qty"] * (fact["unit_price"] * (1 - fact["discount_rate"]))
+    fact["refunded_amount"] = fact["returned_qty"] * (
+        fact["unit_price"] * (1 - fact["discount_rate"])
     )
     fact["recognized_revenue"] = fact["net_revenue"] - fact["refunded_amount"]
     fact["cogs_amount"] = fact["quantity"] * fact["unit_cost"]
@@ -175,7 +194,17 @@ def build_star_schema(cleaned: dict[str, pd.DataFrame]) -> dict[str, pd.DataFram
         "dim_customers": dim_customers,
         "dim_products": dim_products,
         "dim_date": dim_date[
-            ["date_key", "date", "year", "quarter", "month", "month_name", "week_of_year", "day", "weekday_name"]
+            [
+                "date_key",
+                "date",
+                "year",
+                "quarter",
+                "month",
+                "month_name",
+                "week_of_year",
+                "day",
+                "weekday_name",
+            ]
         ],
         "fact_sales": fact_sales,
     }

@@ -13,7 +13,9 @@ except ModuleNotFoundError:
 logger = configure_logging("quality_checks")
 
 
-def _result(dataset: str, expectation: str, success: bool, unexpected_percent: float = 0.0) -> dict[str, object]:
+def _result(
+    dataset: str, expectation: str, success: bool, unexpected_percent: float = 0.0
+) -> dict[str, object]:
     return {
         "dataset": dataset,
         "expectation": expectation,
@@ -34,7 +36,9 @@ def unique_check(df: pd.DataFrame, dataset: str, column: str) -> dict[str, objec
     return _result(dataset, f"unique_{column}", duplicated == 0, unexpected_percent)
 
 
-def positive_check(df: pd.DataFrame, dataset: str, column: str, strict: bool = False) -> dict[str, object]:
+def positive_check(
+    df: pd.DataFrame, dataset: str, column: str, strict: bool = False
+) -> dict[str, object]:
     if column not in df.columns:
         return _result(dataset, f"{column}_exists", False, 100)
     invalid = (df[column] <= 0).sum() if strict else (df[column] < 0).sum()
@@ -115,7 +119,12 @@ def main() -> None:
         fact_returns = pd.read_csv(fact_returns_path)
         return_rate = fact_returns["order_id"].nunique() / max(fact_orders["order_id"].nunique(), 1)
         report_rows.append(
-            _result("global", "refund_rate_below_threshold_0.25", return_rate <= 0.25, max(return_rate - 0.25, 0) * 100)
+            _result(
+                "global",
+                "refund_rate_below_threshold_0.25",
+                return_rate <= 0.25,
+                max(return_rate - 0.25, 0) * 100,
+            )
         )
 
     quality_df = pd.DataFrame(report_rows)
@@ -130,10 +139,11 @@ def main() -> None:
         "checks_passed": int(quality_df["success"].sum()) if not quality_df.empty else 0,
         "checks_failed": int((~quality_df["success"]).sum()) if not quality_df.empty else 0,
     }
-    (OUTPUT_ROOT / "quality" / "quality_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    (OUTPUT_ROOT / "quality" / "quality_summary.json").write_text(
+        json.dumps(summary, indent=2), encoding="utf-8"
+    )
     logger.info("Quality checks completed: %s", summary)
 
 
 if __name__ == "__main__":
     main()
-

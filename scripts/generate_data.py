@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import argparse
-from datetime import datetime, timedelta
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import numpy as np
@@ -24,7 +24,7 @@ EVENT_TYPES = ["page_view", "product_view", "add_to_cart", "checkout_start", "pu
 
 
 def _date_range(days: int) -> pd.DatetimeIndex:
-    end = datetime.utcnow().date()
+    end = datetime.now(UTC).date()
     start = end - timedelta(days=days - 1)
     return pd.date_range(start, end, freq="D")
 
@@ -79,7 +79,9 @@ def generate_orders(
     customer_ids = customers["customer_id"].tolist()
 
     for d in dates:
-        for product_id in np.random.choice(product_ids, size=min(len(product_ids), 120), replace=False):
+        for product_id in np.random.choice(
+            product_ids, size=min(len(product_ids), 120), replace=False
+        ):
             inventory.append(
                 {
                     "snapshot_date": d,
@@ -99,9 +101,13 @@ def generate_orders(
         total_amount = 0.0
 
         for product_id in line_products:
-            base_price = float(products.loc[products["product_id"] == product_id, "base_price"].iloc[0])
+            base_price = float(
+                products.loc[products["product_id"] == product_id, "base_price"].iloc[0]
+            )
             quantity = int(np.random.randint(1, 4))
-            discount_rate = float(np.random.choice([0.0, 0.05, 0.1, 0.15], p=[0.5, 0.25, 0.2, 0.05]))
+            discount_rate = float(
+                np.random.choice([0.0, 0.05, 0.1, 0.15], p=[0.5, 0.25, 0.2, 0.05])
+            )
             unit_price = round(base_price * (1 - discount_rate), 2)
             line_amount = round(unit_price * quantity, 2)
             total_amount += line_amount
@@ -120,7 +126,9 @@ def generate_orders(
                 }
             )
 
-        payment_status = np.random.choice(["completed", "completed", "failed", "refunded"], p=[0.78, 0.15, 0.03, 0.04])
+        payment_status = np.random.choice(
+            ["completed", "completed", "failed", "refunded"], p=[0.78, 0.15, 0.03, 0.04]
+        )
         payments.append(
             {
                 "payment_id": f"PAY{i:07d}",
@@ -138,7 +146,9 @@ def generate_orders(
                     "return_id": f"RET{i:07d}",
                     "order_id": order_id,
                     "return_ts": order_ts + pd.Timedelta(days=np.random.randint(1, 28)),
-                    "return_reason": np.random.choice(["damaged", "wrong_size", "late_delivery", "not_as_described"]),
+                    "return_reason": np.random.choice(
+                        ["damaged", "wrong_size", "late_delivery", "not_as_described"]
+                    ),
                     "refund_amount": round(total_amount * np.random.uniform(0.2, 1.0), 2),
                 }
             )
@@ -151,7 +161,9 @@ def generate_orders(
     )
 
 
-def generate_clickstream(customers: pd.DataFrame, products: pd.DataFrame, n_events: int, days: int) -> pd.DataFrame:
+def generate_clickstream(
+    customers: pd.DataFrame, products: pd.DataFrame, n_events: int, days: int
+) -> pd.DataFrame:
     dates = _date_range(days)
     records = []
     customer_ids = customers["customer_id"].tolist()
@@ -159,17 +171,24 @@ def generate_clickstream(customers: pd.DataFrame, products: pd.DataFrame, n_even
 
     for i in range(1, n_events + 1):
         event_ts = np.random.choice(dates) + pd.Timedelta(
-            hours=np.random.randint(0, 24), minutes=np.random.randint(0, 60), seconds=np.random.randint(0, 60)
+            hours=np.random.randint(0, 24),
+            minutes=np.random.randint(0, 60),
+            seconds=np.random.randint(0, 60),
         )
         records.append(
             {
                 "event_id": f"EVT{i:09d}",
                 "event_ts": event_ts,
                 "session_id": f"SESS{np.random.randint(1, n_events // 8 + 1):08d}",
-                "customer_id": np.random.choice(customer_ids + [None], p=[*(np.repeat(0.9 / len(customer_ids), len(customer_ids))), 0.1]),
+                "customer_id": np.random.choice(
+                    customer_ids + [None],
+                    p=[*(np.repeat(0.9 / len(customer_ids), len(customer_ids))), 0.1],
+                ),
                 "product_id": np.random.choice(product_ids),
                 "event_type": np.random.choice(EVENT_TYPES, p=[0.45, 0.25, 0.15, 0.1, 0.05]),
-                "page_url": np.random.choice(["/home", "/search", "/product", "/cart", "/checkout"]),
+                "page_url": np.random.choice(
+                    ["/home", "/search", "/product", "/cart", "/checkout"]
+                ),
                 "channel": np.random.choice(["web", "mobile"], p=[0.65, 0.35]),
                 "region": np.random.choice(REGIONS),
             }
@@ -196,7 +215,9 @@ def main() -> None:
     raw_root = DATA_ROOT / "raw"
     customers = generate_customers(args.customers)
     products = generate_products(args.products)
-    orders, payments, returns, inventory = generate_orders(customers, products, args.orders, args.days)
+    orders, payments, returns, inventory = generate_orders(
+        customers, products, args.orders, args.days
+    )
     clickstream = generate_clickstream(customers, products, args.clickstream_events, args.days)
 
     save_raw_data(
@@ -216,4 +237,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

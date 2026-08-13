@@ -21,21 +21,27 @@ def run_pandas() -> None:
     events["event_hour"] = events["event_ts"].dt.floor("h")
     events["event_date"] = events["event_ts"].dt.date.astype(str)
 
-    hourly = (
-        events.groupby(["event_hour", "channel", "event_type"], as_index=False)
-        .agg(event_count=("event_id", "count"), sessions=("session_id", "nunique"), distinct_products=("product_id", "nunique"))
+    hourly = events.groupby(["event_hour", "channel", "event_type"], as_index=False).agg(
+        event_count=("event_id", "count"),
+        sessions=("session_id", "nunique"),
+        distinct_products=("product_id", "nunique"),
     )
 
-    product_activity = (
-        events.groupby(["event_date", "product_id", "event_type"], as_index=False)
-        .agg(event_count=("event_id", "count"))
-    )
+    product_activity = events.groupby(
+        ["event_date", "product_id", "event_type"], as_index=False
+    ).agg(event_count=("event_id", "count"))
 
     (DATA_ROOT / "gold" / "streaming_hourly_activity").mkdir(parents=True, exist_ok=True)
     (DATA_ROOT / "gold" / "streaming_product_activity").mkdir(parents=True, exist_ok=True)
 
-    hourly.to_parquet(DATA_ROOT / "gold" / "streaming_hourly_activity", index=False, partition_cols=["event_hour"])
-    product_activity.to_parquet(DATA_ROOT / "gold" / "streaming_product_activity", index=False, partition_cols=["event_date"])
+    hourly.to_parquet(
+        DATA_ROOT / "gold" / "streaming_hourly_activity", index=False, partition_cols=["event_hour"]
+    )
+    product_activity.to_parquet(
+        DATA_ROOT / "gold" / "streaming_product_activity",
+        index=False,
+        partition_cols=["event_date"],
+    )
 
 
 def run_spark() -> None:
@@ -59,7 +65,11 @@ def run_spark() -> None:
         events.withColumn("event_ts", F.to_timestamp("event_ts"))
         .withColumn("event_hour", F.date_trunc("hour", F.col("event_ts")))
         .groupBy("event_hour", "channel", "event_type")
-        .agg(F.count("event_id").alias("event_count"), F.countDistinct("session_id").alias("sessions"), F.countDistinct("product_id").alias("distinct_products"))
+        .agg(
+            F.count("event_id").alias("event_count"),
+            F.countDistinct("session_id").alias("sessions"),
+            F.countDistinct("product_id").alias("distinct_products"),
+        )
     )
 
     product_activity = (
@@ -68,8 +78,12 @@ def run_spark() -> None:
         .agg(F.count("event_id").alias("event_count"))
     )
 
-    hourly.write.mode("overwrite").partitionBy("event_hour").parquet(str(DATA_ROOT / "gold" / "streaming_hourly_activity"))
-    product_activity.write.mode("overwrite").partitionBy("event_date").parquet(str(DATA_ROOT / "gold" / "streaming_product_activity"))
+    hourly.write.mode("overwrite").partitionBy("event_hour").parquet(
+        str(DATA_ROOT / "gold" / "streaming_hourly_activity")
+    )
+    product_activity.write.mode("overwrite").partitionBy("event_date").parquet(
+        str(DATA_ROOT / "gold" / "streaming_product_activity")
+    )
     spark.stop()
 
 
