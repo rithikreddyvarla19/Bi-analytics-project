@@ -61,9 +61,14 @@ def main() -> None:
         [
             {
                 "orders": int(fact_orders["order_id"].nunique()),
-                "returns": int(fact_returns["order_id"].nunique()) if "order_id" in fact_returns else 0,
+                "returns": int(fact_returns["order_id"].nunique())
+                if "order_id" in fact_returns
+                else 0,
                 "return_rate": round(
-                    (fact_returns["order_id"].nunique() / max(fact_orders["order_id"].nunique(), 1)),
+                    (
+                        fact_returns["order_id"].nunique()
+                        / max(fact_orders["order_id"].nunique(), 1)
+                    ),
                     4,
                 )
                 if "order_id" in fact_returns
@@ -73,19 +78,28 @@ def main() -> None:
     )
 
     conversion = (
-        fact_web_events.groupby(["event_date", "event_type"]).size().unstack(fill_value=0).reset_index()
+        fact_web_events.groupby(["event_date", "event_type"])
+        .size()
+        .unstack(fill_value=0)
+        .reset_index()
         if "event_date" in fact_web_events
         else pd.DataFrame()
     )
 
     top_products = (
-        fact_orders.groupby("product_id").agg(revenue=("order_amount", "sum"), orders=("order_id", "nunique")).reset_index()
+        fact_orders.groupby("product_id")
+        .agg(revenue=("order_amount", "sum"), orders=("order_id", "nunique"))
+        .reset_index()
     )
-    top_products = top_products.merge(dim_products[["product_id", "product_name", "category"]], on="product_id", how="left")
+    top_products = top_products.merge(
+        dim_products[["product_id", "product_name", "category"]], on="product_id", how="left"
+    )
     top_products = top_products.sort_values("revenue", ascending=False).head(25)
 
     regional_revenue = (
-        fact_orders.groupby("region").agg(revenue=("order_amount", "sum"), orders=("order_id", "nunique")).reset_index()
+        fact_orders.groupby("region")
+        .agg(revenue=("order_amount", "sum"), orders=("order_id", "nunique"))
+        .reset_index()
     )
 
     artifacts = {
@@ -106,4 +120,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

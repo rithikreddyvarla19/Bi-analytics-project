@@ -1,6 +1,12 @@
 # Cloud-Native Retail Lakehouse: Batch + Streaming Data Platform on AWS
 
-Production-style Data Engineering portfolio project for a fictional ecommerce company. The platform ingests batch and streaming retail data, processes it through a medallion lakehouse (bronze/silver/gold), builds warehouse-ready marts, runs quality checks, and publishes BI-ready outputs.
+Local reference implementation of a retail batch and streaming pipeline. It processes synthetic ecommerce data through bronze, silver, and gold layers and produces warehouse and BI extracts.
+
+## Constraints and trade-offs
+
+- Local runs use generated files and do not establish AWS throughput or delivery guarantees.
+- Pandas utilities favor inspectability; Spark jobs are provided for distributed execution.
+- Checked-in sample outputs are examples and should be regenerated when pipeline logic changes.
 
 ## Business Problem
 Retail leadership needs a trusted analytics platform for revenue, customer behavior, returns, and inventory operations across channels and regions. Existing reporting is fragmented and not cloud-native.

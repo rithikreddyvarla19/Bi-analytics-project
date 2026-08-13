@@ -30,13 +30,38 @@ def run_pandas() -> None:
     inventory = _read_silver("inventory_snapshots")
     clickstream = _read_silver("clickstream_events")
 
-    dim_customers = customers[["customer_id", "first_name", "last_name", "email", "region", "channel_preference", "created_at", "is_active"]]
-    dim_products = products[["product_id", "sku", "product_name", "category", "base_price", "is_active"]]
+    dim_customers = customers[
+        [
+            "customer_id",
+            "first_name",
+            "last_name",
+            "email",
+            "region",
+            "channel_preference",
+            "created_at",
+            "is_active",
+        ]
+    ]
+    dim_products = products[
+        ["product_id", "sku", "product_name", "category", "base_price", "is_active"]
+    ]
 
-    dim_region = orders[["region"]].dropna().drop_duplicates().rename(columns={"region": "region_name"}).reset_index(drop=True)
+    dim_region = (
+        orders[["region"]]
+        .dropna()
+        .drop_duplicates()
+        .rename(columns={"region": "region_name"})
+        .reset_index(drop=True)
+    )
     dim_region["region_id"] = dim_region.index.map(lambda i: f"REG-{i + 1:02d}")
 
-    dim_channel = orders[["channel"]].dropna().drop_duplicates().rename(columns={"channel": "channel_name"}).reset_index(drop=True)
+    dim_channel = (
+        orders[["channel"]]
+        .dropna()
+        .drop_duplicates()
+        .rename(columns={"channel": "channel_name"})
+        .reset_index(drop=True)
+    )
     dim_channel["channel_id"] = dim_channel.index.map(lambda i: f"CH-{i + 1:02d}")
 
     orders["order_date"] = pd.to_datetime(orders["order_date"], errors="coerce")
@@ -48,19 +73,62 @@ def run_pandas() -> None:
     dim_date["week_of_year"] = dim_date["date_key"].dt.isocalendar().week.astype(int)
 
     fact_orders = orders[
-        ["order_id", "order_line_id", "order_date", "customer_id", "product_id", "region", "channel", "quantity", "line_amount"]
+        [
+            "order_id",
+            "order_line_id",
+            "order_date",
+            "customer_id",
+            "product_id",
+            "region",
+            "channel",
+            "quantity",
+            "line_amount",
+        ]
     ].rename(columns={"quantity": "item_quantity", "line_amount": "order_amount"})
     fact_orders["order_status"] = "placed"
     fact_orders["order_date"] = fact_orders["order_date"].dt.date.astype(str)
 
-    fact_payments = payments[["payment_id", "order_id", "payment_date", "payment_method", "payment_status", "payment_amount"]]
-    fact_returns = returns[["return_id", "order_id", "return_date", "return_reason", "refund_amount"]] if not returns.empty else pd.DataFrame(columns=["return_id", "order_id", "return_date", "return_reason", "refund_amount"])
-    fact_web_events = clickstream[["event_id", "event_ts", "event_date", "session_id", "customer_id", "product_id", "event_type", "channel", "region"]]
-    fact_inventory = inventory[["snapshot_date", "product_id", "region", "on_hand_qty", "reorder_point"]]
+    fact_payments = payments[
+        [
+            "payment_id",
+            "order_id",
+            "payment_date",
+            "payment_method",
+            "payment_status",
+            "payment_amount",
+        ]
+    ]
+    fact_returns = (
+        returns[["return_id", "order_id", "return_date", "return_reason", "refund_amount"]]
+        if not returns.empty
+        else pd.DataFrame(
+            columns=["return_id", "order_id", "return_date", "return_reason", "refund_amount"]
+        )
+    )
+    fact_web_events = clickstream[
+        [
+            "event_id",
+            "event_ts",
+            "event_date",
+            "session_id",
+            "customer_id",
+            "product_id",
+            "event_type",
+            "channel",
+            "region",
+        ]
+    ]
+    fact_inventory = inventory[
+        ["snapshot_date", "product_id", "region", "on_hand_qty", "reorder_point"]
+    ]
 
     daily_sales = (
         fact_orders.groupby(["order_date", "region", "channel"], as_index=False)
-        .agg(gross_sales=("order_amount", "sum"), orders=("order_id", "nunique"), units_sold=("item_quantity", "sum"))
+        .agg(
+            gross_sales=("order_amount", "sum"),
+            orders=("order_id", "nunique"),
+            units_sold=("item_quantity", "sum"),
+        )
         .rename(columns={"order_date": "sales_date"})
     )
 
@@ -74,9 +142,8 @@ def run_pandas() -> None:
     ).reset_index()
 
     fact_inventory["is_stockout"] = (fact_inventory["on_hand_qty"] <= 0).astype(int)
-    inventory_stockout = (
-        fact_inventory.groupby(["snapshot_date", "region"], as_index=False)
-        .agg(stockout_products=("is_stockout", "sum"), tracked_products=("product_id", "nunique"))
+    inventory_stockout = fact_inventory.groupby(["snapshot_date", "region"], as_index=False).agg(
+        stockout_products=("is_stockout", "sum"), tracked_products=("product_id", "nunique")
     )
 
     _write(dim_customers, "dim_customers")
@@ -121,12 +188,34 @@ def run_spark() -> None:
     inventory = read("inventory_snapshots")
     clickstream = read("clickstream_events")
 
-    dim_customers = customers.select("customer_id", "first_name", "last_name", "email", "region", "channel_preference", "created_at", "is_active")
-    dim_products = products.select("product_id", "sku", "product_name", "category", "base_price", "is_active")
-    dim_region = orders.select("region").dropna().dropDuplicates().withColumnRenamed("region", "region_name")
-    dim_region = dim_region.withColumn("region_id", F.concat(F.lit("REG-"), F.lpad(F.monotonically_increasing_id() % 100, 2, "0")))
-    dim_channel = orders.select("channel").dropna().dropDuplicates().withColumnRenamed("channel", "channel_name")
-    dim_channel = dim_channel.withColumn("channel_id", F.concat(F.lit("CH-"), F.lpad(F.monotonically_increasing_id() % 100, 2, "0")))
+    dim_customers = customers.select(
+        "customer_id",
+        "first_name",
+        "last_name",
+        "email",
+        "region",
+        "channel_preference",
+        "created_at",
+        "is_active",
+    )
+    dim_products = products.select(
+        "product_id", "sku", "product_name", "category", "base_price", "is_active"
+    )
+    dim_region = (
+        orders.select("region").dropna().dropDuplicates().withColumnRenamed("region", "region_name")
+    )
+    dim_region = dim_region.withColumn(
+        "region_id", F.concat(F.lit("REG-"), F.lpad(F.monotonically_increasing_id() % 100, 2, "0"))
+    )
+    dim_channel = (
+        orders.select("channel")
+        .dropna()
+        .dropDuplicates()
+        .withColumnRenamed("channel", "channel_name")
+    )
+    dim_channel = dim_channel.withColumn(
+        "channel_id", F.concat(F.lit("CH-"), F.lpad(F.monotonically_increasing_id() % 100, 2, "0"))
+    )
 
     dim_date = (
         orders.select(F.to_date("order_date").alias("date_key"))
@@ -138,31 +227,69 @@ def run_spark() -> None:
     )
 
     fact_orders = orders.select(
-        "order_id", "order_line_id", "order_date", "customer_id", "product_id", "region", "channel",
-        F.col("quantity").alias("item_quantity"), F.col("line_amount").alias("order_amount")
+        "order_id",
+        "order_line_id",
+        "order_date",
+        "customer_id",
+        "product_id",
+        "region",
+        "channel",
+        F.col("quantity").alias("item_quantity"),
+        F.col("line_amount").alias("order_amount"),
     ).withColumn("order_status", F.lit("placed"))
 
-    fact_payments = payments.select("payment_id", "order_id", "payment_date", "payment_method", "payment_status", "payment_amount")
-    fact_returns = returns.select("return_id", "order_id", "return_date", "return_reason", "refund_amount")
-    fact_web_events = clickstream.select("event_id", "event_ts", "event_date", "session_id", "customer_id", "product_id", "event_type", "channel", "region")
-    fact_inventory = inventory.select("snapshot_date", "product_id", "region", "on_hand_qty", "reorder_point")
+    fact_payments = payments.select(
+        "payment_id",
+        "order_id",
+        "payment_date",
+        "payment_method",
+        "payment_status",
+        "payment_amount",
+    )
+    fact_returns = returns.select(
+        "return_id", "order_id", "return_date", "return_reason", "refund_amount"
+    )
+    fact_web_events = clickstream.select(
+        "event_id",
+        "event_ts",
+        "event_date",
+        "session_id",
+        "customer_id",
+        "product_id",
+        "event_type",
+        "channel",
+        "region",
+    )
+    fact_inventory = inventory.select(
+        "snapshot_date", "product_id", "region", "on_hand_qty", "reorder_point"
+    )
 
     daily_sales = (
         fact_orders.groupBy("order_date", "region", "channel")
-        .agg(F.round(F.sum("order_amount"), 2).alias("gross_sales"), F.countDistinct("order_id").alias("orders"), F.sum("item_quantity").alias("units_sold"))
+        .agg(
+            F.round(F.sum("order_amount"), 2).alias("gross_sales"),
+            F.countDistinct("order_id").alias("orders"),
+            F.sum("item_quantity").alias("units_sold"),
+        )
         .withColumnRenamed("order_date", "sales_date")
     )
 
     conversion = (
         clickstream.groupBy("event_date", "channel")
-        .pivot("event_type", ["page_view", "product_view", "add_to_cart", "checkout_start", "purchase"])
-        .count().fillna(0)
+        .pivot(
+            "event_type", ["page_view", "product_view", "add_to_cart", "checkout_start", "purchase"]
+        )
+        .count()
+        .fillna(0)
     )
 
     inventory_stockout = (
         fact_inventory.withColumn("is_stockout", F.when(F.col("on_hand_qty") <= 0, 1).otherwise(0))
         .groupBy("snapshot_date", "region")
-        .agg(F.sum("is_stockout").alias("stockout_products"), F.countDistinct("product_id").alias("tracked_products"))
+        .agg(
+            F.sum("is_stockout").alias("stockout_products"),
+            F.countDistinct("product_id").alias("tracked_products"),
+        )
     )
 
     write(dim_customers, "dim_customers")

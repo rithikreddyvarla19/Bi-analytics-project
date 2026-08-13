@@ -25,22 +25,32 @@ def _write_pandas(df: pd.DataFrame, name: str, partition_col: str | None = None)
 
 
 def run_pandas() -> None:
-    customers = pd.read_parquet(_latest_bronze_file("customers")).drop_duplicates(subset=["customer_id"])
+    customers = pd.read_parquet(_latest_bronze_file("customers")).drop_duplicates(
+        subset=["customer_id"]
+    )
     customers["email"] = customers["email"].astype(str).str.lower()
     customers["created_at"] = pd.to_datetime(customers["created_at"], errors="coerce")
 
-    products = pd.read_parquet(_latest_bronze_file("products")).drop_duplicates(subset=["product_id"])
+    products = pd.read_parquet(_latest_bronze_file("products")).drop_duplicates(
+        subset=["product_id"]
+    )
     products["base_price"] = pd.to_numeric(products["base_price"], errors="coerce")
     products = products[(products["base_price"] > 0) & products["product_id"].notna()]
 
-    orders = pd.read_parquet(_latest_bronze_file("orders")).drop_duplicates(subset=["order_line_id"])
+    orders = pd.read_parquet(_latest_bronze_file("orders")).drop_duplicates(
+        subset=["order_line_id"]
+    )
     orders["order_ts"] = pd.to_datetime(orders["order_ts"], errors="coerce")
     orders["order_date"] = orders["order_ts"].dt.date.astype(str)
     orders["quantity"] = pd.to_numeric(orders["quantity"], errors="coerce").fillna(0).astype(int)
     orders["line_amount"] = pd.to_numeric(orders["line_amount"], errors="coerce").fillna(0.0)
-    orders = orders[(orders["order_id"].notna()) & (orders["quantity"] > 0) & (orders["line_amount"] >= 0)]
+    orders = orders[
+        (orders["order_id"].notna()) & (orders["quantity"] > 0) & (orders["line_amount"] >= 0)
+    ]
 
-    payments = pd.read_parquet(_latest_bronze_file("payments")).drop_duplicates(subset=["payment_id"])
+    payments = pd.read_parquet(_latest_bronze_file("payments")).drop_duplicates(
+        subset=["payment_id"]
+    )
     payments["payment_ts"] = pd.to_datetime(payments["payment_ts"], errors="coerce")
     payments["payment_date"] = payments["payment_ts"].dt.date.astype(str)
 
@@ -52,9 +62,13 @@ def run_pandas() -> None:
     inventory = pd.read_parquet(_latest_bronze_file("inventory_snapshots")).drop_duplicates(
         subset=["snapshot_date", "product_id", "region"]
     )
-    inventory["snapshot_date"] = pd.to_datetime(inventory["snapshot_date"], errors="coerce").dt.date.astype(str)
+    inventory["snapshot_date"] = pd.to_datetime(
+        inventory["snapshot_date"], errors="coerce"
+    ).dt.date.astype(str)
 
-    clickstream = pd.read_parquet(_latest_bronze_file("clickstream_events")).drop_duplicates(subset=["event_id"])
+    clickstream = pd.read_parquet(_latest_bronze_file("clickstream_events")).drop_duplicates(
+        subset=["event_id"]
+    )
     clickstream["event_ts"] = pd.to_datetime(clickstream["event_ts"], errors="coerce")
     clickstream["event_date"] = clickstream["event_ts"].dt.date.astype(str)
 
@@ -106,7 +120,9 @@ def run_spark() -> None:
         .withColumn("quantity", F.col("quantity").cast("int"))
         .withColumn("line_amount", F.col("line_amount").cast("double"))
         .dropDuplicates(["order_line_id"])
-        .filter((F.col("order_id").isNotNull()) & (F.col("quantity") > 0) & (F.col("line_amount") >= 0))
+        .filter(
+            (F.col("order_id").isNotNull()) & (F.col("quantity") > 0) & (F.col("line_amount") >= 0)
+        )
     )
     payments = (
         read_domain("payments")

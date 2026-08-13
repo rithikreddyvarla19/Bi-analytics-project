@@ -39,7 +39,9 @@ def generate_customers(config: DataConfig, rng: np.random.Generator) -> pd.DataF
             "email": [f"customer{i}@shopmail.com" for i in range(1, config.n_customers + 1)],
             "signup_date": signup_dates,
             "region_code": rng.choice(regions["region_code"], size=config.n_customers),
-            "loyalty_tier": rng.choice(["Bronze", "Silver", "Gold"], p=[0.5, 0.35, 0.15], size=config.n_customers),
+            "loyalty_tier": rng.choice(
+                ["Bronze", "Silver", "Gold"], p=[0.5, 0.35, 0.15], size=config.n_customers
+            ),
         }
     )
     missing_region_idx = rng.choice(customer_df.index, size=40, replace=False)
@@ -100,7 +102,9 @@ def generate_orders(
             "order_date": order_dates,
             "order_status": status,
             "payment_method": rng.choice(
-                ["Credit Card", "Debit Card", "PayPal", "Wallet"], p=[0.45, 0.27, 0.18, 0.1], size=config.n_orders
+                ["Credit Card", "Debit Card", "PayPal", "Wallet"],
+                p=[0.45, 0.27, 0.18, 0.1],
+                size=config.n_orders,
             ),
         }
     )
@@ -130,17 +134,21 @@ def generate_orders(
             item_id += 1
     order_items = pd.DataFrame(item_records)
 
-    delivered_items = order_items.merge(orders[["order_id", "order_date", "order_status"]], on="order_id", how="left")
+    delivered_items = order_items.merge(
+        orders[["order_id", "order_date", "order_status"]], on="order_id", how="left"
+    )
     delivered_items = delivered_items[delivered_items["order_status"] == "Delivered"]
     return_candidates = delivered_items.sample(frac=0.08, random_state=config.seed)
     returns = return_candidates[["order_item_id", "order_id", "product_id", "quantity"]].copy()
     returns["returned_qty"] = returns["quantity"].clip(upper=1)
     returns["return_reason"] = rng.choice(
-        ["Damaged", "Wrong Size", "Not Needed", "Late Delivery"], size=len(returns), p=[0.35, 0.25, 0.25, 0.15]
+        ["Damaged", "Wrong Size", "Not Needed", "Late Delivery"],
+        size=len(returns),
+        p=[0.35, 0.25, 0.25, 0.15],
     )
-    returns["return_date"] = pd.to_datetime(delivered_items["order_date"].sample(n=len(returns), random_state=7).values) + pd.to_timedelta(
-        rng.integers(3, 40, size=len(returns)), unit="D"
-    )
+    returns["return_date"] = pd.to_datetime(
+        delivered_items["order_date"].sample(n=len(returns), random_state=7).values
+    ) + pd.to_timedelta(rng.integers(3, 40, size=len(returns)), unit="D")
     returns = returns.drop(columns=["quantity"]).reset_index(drop=True)
 
     duplicate_orders = orders.sample(25, random_state=config.seed)

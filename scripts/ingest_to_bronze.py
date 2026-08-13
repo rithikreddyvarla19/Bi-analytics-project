@@ -50,7 +50,9 @@ def main() -> None:
     for dataset in RAW_DATASETS:
         counts[dataset] = ingest_dataset(raw_root, bronze_root, dataset, ingest_date)
 
-    counts_df = pd.DataFrame([{"dataset": k, "row_count": v, "ingest_date": ingest_date} for k, v in counts.items()])
+    counts_df = pd.DataFrame(
+        [{"dataset": k, "row_count": v, "ingest_date": ingest_date} for k, v in counts.items()]
+    )
     ensure_dir(DATA_ROOT / "warehouse")
     counts_df.to_csv(DATA_ROOT / "warehouse" / "bronze_ingestion_counts.csv", index=False)
     logger.info("Bronze ingestion complete for %s datasets", len(RAW_DATASETS))
@@ -58,4 +60,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

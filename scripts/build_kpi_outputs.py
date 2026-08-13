@@ -8,7 +8,9 @@ import pandas as pd
 def _load_processed(processed_dir: Path) -> dict[str, pd.DataFrame]:
     return {
         "fact_sales": pd.read_csv(processed_dir / "fact_sales.csv"),
-        "dim_customers": pd.read_csv(processed_dir / "dim_customers.csv", parse_dates=["signup_date"]),
+        "dim_customers": pd.read_csv(
+            processed_dir / "dim_customers.csv", parse_dates=["signup_date"]
+        ),
         "dim_products": pd.read_csv(processed_dir / "dim_products.csv"),
         "dim_date": pd.read_csv(processed_dir / "dim_date.csv", parse_dates=["date"]),
         "dim_region": pd.read_csv(processed_dir / "dim_region.csv"),
@@ -29,8 +31,12 @@ def create_kpi_outputs(processed_dir: Path, output_dir: Path, dashboard_export_d
     sales = fact.merge(dim_date[["date_key", "date", "year", "month"]], on="date_key", how="left")
     sales["month_start"] = sales["date"].dt.to_period("M").dt.to_timestamp()
 
-    order_level = sales.groupby("order_id", as_index=False).agg(order_revenue=("recognized_revenue", "sum"))
-    customer_orders = sales.groupby("customer_key", as_index=False).agg(order_count=("order_id", "nunique"))
+    order_level = sales.groupby("order_id", as_index=False).agg(
+        order_revenue=("recognized_revenue", "sum")
+    )
+    customer_orders = sales.groupby("customer_key", as_index=False).agg(
+        order_count=("order_id", "nunique")
+    )
 
     total_revenue = float(sales["recognized_revenue"].sum())
     total_orders = int(sales["order_id"].nunique())
@@ -51,7 +57,9 @@ def create_kpi_outputs(processed_dir: Path, output_dir: Path, dashboard_export_d
     monthly["monthly_aov"] = monthly["monthly_revenue"] / monthly["monthly_orders"]
 
     product_perf = (
-        sales.merge(dim_products[["product_key", "product_name", "category"]], on="product_key", how="left")
+        sales.merge(
+            dim_products[["product_key", "product_name", "category"]], on="product_key", how="left"
+        )
         .groupby(["category", "product_name"], as_index=False)
         .agg(
             revenue=("recognized_revenue", "sum"),
@@ -72,12 +80,18 @@ def create_kpi_outputs(processed_dir: Path, output_dir: Path, dashboard_export_d
             refunded=("refunded_amount", "sum"),
         )
     )
-    region_perf["refund_rate_pct"] = (region_perf["refunded"] / region_perf["revenue"]).fillna(0) * 100
+    region_perf["refund_rate_pct"] = (region_perf["refunded"] / region_perf["revenue"]).fillna(
+        0
+    ) * 100
 
     clv_proxy = (
         sales.groupby("customer_key", as_index=False)
         .agg(total_revenue=("recognized_revenue", "sum"), total_orders=("order_id", "nunique"))
-        .merge(dim_customers[["customer_key", "loyalty_tier", "region_key"]], on="customer_key", how="left")
+        .merge(
+            dim_customers[["customer_key", "loyalty_tier", "region_key"]],
+            on="customer_key",
+            how="left",
+        )
         .merge(dim_region[["region_key", "region_name"]], on="region_key", how="left")
         .sort_values("total_revenue", ascending=False)
     )
@@ -87,7 +101,10 @@ def create_kpi_outputs(processed_dir: Path, output_dir: Path, dashboard_export_d
             {"kpi_name": "total_revenue", "kpi_value": round(total_revenue, 2)},
             {"kpi_name": "total_orders", "kpi_value": total_orders},
             {"kpi_name": "average_order_value", "kpi_value": round(average_order_value, 2)},
-            {"kpi_name": "monthly_growth_latest_pct", "kpi_value": round(float(monthly["monthly_growth_pct"].iloc[-1]), 2)},
+            {
+                "kpi_name": "monthly_growth_latest_pct",
+                "kpi_value": round(float(monthly["monthly_growth_pct"].iloc[-1]), 2),
+            },
             {"kpi_name": "repeat_purchase_rate_pct", "kpi_value": round(repeat_purchase_rate, 2)},
             {"kpi_name": "refund_rate_pct", "kpi_value": round(refund_rate, 2)},
         ]
@@ -109,7 +126,9 @@ def create_kpi_outputs(processed_dir: Path, output_dir: Path, dashboard_export_d
         monthly[["month_start", "monthly_revenue", "monthly_growth_pct"]], how="cross"
     )
 
-    executive_dashboard.to_csv(dashboard_export_dir / "executive_dashboard_dataset.csv", index=False)
+    executive_dashboard.to_csv(
+        dashboard_export_dir / "executive_dashboard_dataset.csv", index=False
+    )
     customer_dashboard.to_csv(dashboard_export_dir / "customer_insights_dataset.csv", index=False)
     product_dashboard.to_csv(dashboard_export_dir / "product_performance_dataset.csv", index=False)
     region_dashboard.to_csv(dashboard_export_dir / "regional_trends_dataset.csv", index=False)
